@@ -4,6 +4,10 @@ define("ROOT", dirname(__DIR__));
 
 require ROOT . '/vendor/autoload.php';
 
-echo ROOT;
+use App\classes\DB;
 
-//phpinfo();
+$dbHost = 'mysql';
+$dbUser = 'root';
+$dbName = 'billpay';
+$dbPassword = 'rootpassword';
+$dbConnection = new DB($dbHost, $dbUser, $dbName, $dbPassword);

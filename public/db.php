@@ -1,20 +1,11 @@
 <?php
+
+use App\classes\DB;
 $dbHost = 'db';
-$dbName = 'billpay';
 $dbUser = 'user';
+$dbName = 'billpay';
 $dbPassword = 'pasword';
+$dbConnection = new DB($dbHost, $dbUser, $dbName, $dbPassword);
+var_export($dbConnection);
 
-try {
-    $pdo = new PDO(
-        "mysql:dbname={$dbName};host={$dbHost}",
-        $dbUser,
-        $dbPassword,
-        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-    );
 
-    $query = $pdo->query('SHOW VARIABLES like "version"');
-    $row = $query->fetch();
-    echo 'MySQL version:' . $row['Value'];
-} catch (PDOException $e) {
-    echo $e->getMessage();
-}
