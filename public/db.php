@@ -1,8 +1,8 @@
 <?php
-$dbHost = 'mysql';
-$dbName = 'blog';
-$dbUser = 'mukesh';
-$dbPassword = 'chapagain';
+$dbHost = 'db';
+$dbName = 'billpay';
+$dbUser = 'user';
+$dbPassword = 'pasword';
 
 try {
     $pdo = new PDO(
