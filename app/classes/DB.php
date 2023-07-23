@@ -73,7 +73,7 @@ class DB
         }
     }
 
-    public function fetchRow(string $query, array $params = []): ?array
+    public function fetchRow(string $query, array $params = []): array|bool|null
     {
         if ($this->conn === null) {
             return null;
@@ -101,6 +101,11 @@ class DB
             echo $e->getMessage();
             return null;
         }
+    }
+
+    public function getConnection(): ?PDO
+    {
+        return $this->conn;
     }
 
     public function __destruct()
