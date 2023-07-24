@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Add more endpoints here as needed
     ];
 
-    $callback = !empty($apiRequest['process']) ?? $apiRequest['process'];
+    $callback = !empty($apiRequest['process']) ? $apiRequest['process'] : null;
 
     if (array_key_exists($callback, $endpoints)) {
         $callbackClass = 'App\classes\\' . $endpoints[$callback];
