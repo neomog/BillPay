@@ -15,5 +15,13 @@ CREATE TABLE `users`(
                         `api_key` VARCHAR(250) NOT NULL,
                         `ref_id` VARCHAR(250) NOT NULL,
                         `reg_date` TIMESTAMP,
-                        `updated_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+                        `modified_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+
+CREATE TABLE `user_wallet`(
+                            `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                            `user_id` INT(11) FOREIGN KEY REFERENCES users(id),
+                            `wallet_balance` DECIMAL(11) NOT NULL DEFAULT '0.00',
+                            `reg_date` TIMESTAMP,
+                            `modified_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
