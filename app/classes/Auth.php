@@ -81,6 +81,14 @@ class Auth
                 $userSaved = $this->db->executeQuery($insertUserQuery, $insertUserParams);
                 if($userSaved) {
                     // TODO: implement register email notification for user mail registration
+                    // TODO: implement user wallet creation
+                    $userId = $this->db->getLastInsertedId();
+                    $insertWalletQuery = "INSERT INTO user_wallet (user_id, reg_date, modified_date) VALUES (?, NOW(), NOW())";
+                    $insertWalletParams = [
+                        $userId
+                    ];
+                    $this->db->executeQuery($insertWalletQuery, $insertWalletParams);
+
                     $message = "Registration successful.";
                     $responseData = [
                         'status' => true,
