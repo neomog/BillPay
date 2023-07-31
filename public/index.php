@@ -30,8 +30,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'register' => 'Auth',
         'login' => 'Auth',
         'resetPassword' => 'Auth',
+        'balance' => 'Router',
+        'getServices' => 'Router',
+        'getServiceOptions' => 'Router',
+        'getVariationCodes' => 'Router',
+        'airtime' => 'Router',
+        'data' => 'Router',
+        'education' => 'Router',
+        'electricity' => 'Router',
         // Add more endpoints here as needed
     ];
+    // TODO: generate request id
 
     $callback = !empty($apiRequest['process']) ? $apiRequest['process'] : null;
 
