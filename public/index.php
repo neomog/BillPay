@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'data' => 'Router',
         'education' => 'Router',
         'electricity' => 'Router',
+        'createUser' => 'createUser'
         // Add more endpoints here as needed
     ];
     // TODO: generate request id
