@@ -6,6 +6,8 @@ class User
 {
     private $db;
 
+    private $userId;
+
     public function __construct(DB $db)
     {
         $this->db = $db;
@@ -21,13 +23,37 @@ class User
         return $this->db->fetchRow($getUserQuery, $getUserParams);
 
     }
-    public function getUserIdByApiKey($apiKey): array
+    public function getUserIdByApiKey($apiKey): int
     {
         $getUserId = "SELECT id FROM users WHERE api_key = ?";
         $getUserIdParams = [
             $apiKey
         ];
-        return $this->db->fetchRow($getUserId, $getUserIdParams);
+        $getUserIdResult = $this->db->fetchRow($getUserId, $getUserIdParams);
+        return $getUserIdResult['id'];
+    }
+
+    // TODO: move to wallet class
+    public function getUserWalletBalance($apiKey)
+    {
+        $userId = $this->getUserIdByApiKey($apiKey);
+        $getWalletQuery = "SELECT wallet_balance FROM user_wallet WHERE user_id = ?";
+        $getWalletParams = [
+            $userId
+        ];
+        $getWalletResult = $this->db->fetchRow($getWalletQuery, $getWalletParams);
+        return $getWalletResult['wallet_balance'];
+    }
+
+    public function chargeUserWallet($apiKey, $amount): bool
+    {
+        $userId = $this->getUserIdByApiKey($apiKey);
+        $chargeUserQuery = "UPDATE user_wallet SET wallet_balance = wallet_balance - ? WHERE user_id = ?";
+        $chargeUserParams = [
+            $amount,
+            $userId
+        ];
+        return $this->db->executeQuery($chargeUserQuery, $chargeUserParams);
     }
 
 }

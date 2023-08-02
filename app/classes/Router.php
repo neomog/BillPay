@@ -20,11 +20,15 @@ class Router
     private $vendor;
     private $db;
     private $data_input;
+    private $apiKey;
+    private $amount;
 
     public function __construct($db, $data)
     {
-        if ($this->verifyUser($data['apiKey'])) {
-            $this->db = $db;
+        $this->db = $db;
+        if ($this->checkUserExist($data['apiKey'])) {
+            $this->apiKey = $data['apiKey'];
+            $this->amount = $data['amount'];
             $Helper = new Helper();
             $data['requestId'] = $Helper->generateRequestId();
             $this->data_input = $data;
@@ -37,139 +41,220 @@ class Router
             ];
             return Helper::jsonResponse($responseData);
         }
+        // TODO: write function that processes transaction and calls other functions
 
     }
 
-    public function balance()
+    public function balance(): string
     {
-        return $this->vendor->balance();
+        $responseData = [
+            'status' => true,
+            'server_response' => 'Success',
+            'server_message' => "Action completed successfully",
+            'data' => $this->vendor->balance()
+        ];
+        return Helper::jsonResponse($responseData);
     }
 
-    public function getServices()
+    public function getServices(): string
     {
-        return $this->vendor->getServices();
+        $responseData = [
+            'status' => true,
+            'server_response' => 'Success',
+            'server_message' => "Action completed successfully",
+            'data' => $this->vendor->getServices()
+        ];
+        return Helper::jsonResponse($responseData);
     }
 
-    public function getServiceOptions()
+    public function getServiceOptions(): string
     {
-        return $this->vendor->getServiceOptions();
+        $responseData = [
+            'status' => true,
+            'server_response' => 'Success',
+            'server_message' => "Action completed successfully",
+            'data' => $this->vendor->getServiceOptions()
+        ];
+        return Helper::jsonResponse($responseData);
     }
 
-    public function getVariationCodes()
+    public function getVariationCodes(): string
     {
-        return $this->vendor->getVariationCodes();
+        $responseData = [
+            'status' => true,
+            'server_response' => 'Success',
+            'server_message' => "Action completed successfully",
+            'data' => $this->vendor->getVariationCodes()
+        ];
+        return Helper::jsonResponse($responseData);
     }
 
     public function airtime()
     {
-        $this->recordTransaction('airtime');
-        $vendorResponse = $this->vendor->airtime();
-        if ($vendorResponse) {
-            $responseData = [
-                'status' => true,
-                'server_response' => 'Success',
-                'server_message' => "Action completed, awaiting vendor confirmation",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData);
-        } else {
-            $responseData = [
-                'status' => false,
-                'server_response' => 'Failed',
-                'server_message' => "Action failed, either vendor error or network error",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData);
+        $processRequest = $this->recordTransaction('airtime');
+        $checkProcessRequest = json_decode($processRequest, true);
+        if ($checkProcessRequest['data']['status']) {
+            $vendorResponse = $this->vendor->airtime();
+            if ($vendorResponse) {
+                $responseData = [
+                    'status' => true,
+                    'server_response' => 'Success',
+                    'server_message' => "Action completed, awaiting vendor confirmation",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData);
+            } else {
+                $responseData = [
+                    'status' => false,
+                    'server_response' => 'Failed',
+                    'server_message' => "Action failed, either vendor error or network error",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData, 400);
+            }
         }
+
+
+        return $processRequest;
+
     }
 
-    public function data()
+    public function data(): string
     {
-        $this->recordTransaction('data');
-        $vendorResponse = $this->vendor->data();
-        if ($vendorResponse) {
-            $responseData = [
-                'status' => true,
-                'server_response' => 'Success',
-                'server_message' => "Action completed, awaiting vendor confirmation",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData);
-        } else {
-            $responseData = [
-                'status' => false,
-                'server_response' => 'Failed',
-                'server_message' => "Action failed, either vendor error or network error",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData, 400);
+        $processRequest = $this->recordTransaction('data');
+        $checkProcessRequest = json_decode($processRequest, true);
+        if ($checkProcessRequest['data']['status']) {
+            $vendorResponse = $this->vendor->data();
+            if ($vendorResponse) {
+                $responseData = [
+                    'status' => true,
+                    'server_response' => 'Success',
+                    'server_message' => "Action completed, awaiting vendor confirmation",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData);
+            } else {
+                $responseData = [
+                    'status' => false,
+                    'server_response' => 'Failed',
+                    'server_message' => "Action failed, either vendor error or network error",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData, 400);
+            }
         }
+        return $processRequest;
     }
 
-    public function education()
+    public function education(): string
     {
-        $this->recordTransaction('education');
-        $vendorResponse = $this->vendor->education();
-        if ($vendorResponse) {
-            $responseData = [
-                'status' => true,
-                'server_response' => 'Success',
-                'server_message' => "Action completed, awaiting vendor confirmation",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData);
-        } else {
-            $responseData = [
-                'status' => false,
-                'server_response' => 'Failed',
-                'server_message' => "Action failed, either vendor error or network error",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData, 400);
+        $processRequest = $this->recordTransaction('education');
+        $checkProcessRequest = json_decode($processRequest, true);
+        if ($checkProcessRequest['data']['status']) {
+            $vendorResponse = $this->vendor->education();
+            if ($vendorResponse) {
+                $responseData = [
+                    'status' => true,
+                    'server_response' => 'Success',
+                    'server_message' => "Action completed, awaiting vendor confirmation",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData);
+            } else {
+                $responseData = [
+                    'status' => false,
+                    'server_response' => 'Failed',
+                    'server_message' => "Action failed, either vendor error or network error",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData, 400);
+            }
         }
+        return $processRequest;
     }
 
-    public function electricity()
+    public function electricity(): string
     {
-        $this->recordTransaction('electricity');
-        $vendorResponse = $this->vendor->electricity();
-        if ($vendorResponse) {
-            $responseData = [
-                'status' => true,
-                'server_response' => 'Success',
-                'server_message' => "Action completed, awaiting vendor confirmation",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData);
-        } else {
-            $responseData = [
-                'status' => false,
-                'server_response' => 'Failed',
-                'server_message' => "Action failed, either vendor error or network error",
-                'data' => $vendorResponse
-            ];
-            return Helper::jsonResponse($responseData, 400);
+        $processRequest = $this->recordTransaction('electricity');
+        $checkProcessRequest = json_decode($processRequest, true);
+        if ($checkProcessRequest['data']['status']) {
+            $vendorResponse = $this->vendor->electricity();
+            if ($vendorResponse) {
+                $responseData = [
+                    'status' => true,
+                    'server_response' => 'Success',
+                    'server_message' => "Action completed, awaiting vendor confirmation",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData);
+            } else {
+                $responseData = [
+                    'status' => false,
+                    'server_response' => 'Failed',
+                    'server_message' => "Action failed, either vendor error or network error",
+                    'data' => $vendorResponse
+                ];
+                return Helper::jsonResponse($responseData, 400);
+            }
         }
+        return $processRequest;
     }
 
     public function recordTransaction($transactionType)
     {
         $User = new User($this->db);
-        $userIdRequest = $User->getUserIdByApiKey($this->data_input['apiKey']);
-        $insertTransactionQuery = "INSERT INTO recharge_transactions (user_id, vendor, request_id, status, transaction_amount, transaction_type, payment_method, date_created, date_updated) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
-        $insertTransactionParams = [
-            $userIdRequest['id'],
-            "vtpass",
-            $this->data_input['requestId'],
-            "pending",
-            $this->data_input['amount'],
-            $transactionType,
-            "wallet"
+        $Wallet = new Wallet($this->db);
+
+        // check that user has sufficient funds to perform operation
+        $walletBalance = $Wallet->getUserWalletBalance($this->apiKey);
+        if ($this->amount > $walletBalance) {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => "Action failed: insufficient funds",
+                'data' => []
+            ];
+            return Helper::jsonResponse($responseData, 400);
+        }
+
+        // charge user wallet before rendering service
+        $chargeUser = $Wallet->chargeUserWallet($this->apiKey, $this->amount);
+        if ($chargeUser) {
+            // record recharge transaction
+            $userIdRequest = $User->getUserIdByApiKey($this->data_input['apiKey']);
+            $insertTransactionQuery = "INSERT INTO recharge_transactions (user_id, vendor, request_id, status, transaction_amount, transaction_type, payment_method, date_created, date_updated) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
+            $insertTransactionParams = [
+                $userIdRequest,
+                "vtpass",
+                $this->data_input['requestId'],
+                "pending",
+                $this->data_input['amount'],
+                $transactionType,
+                "wallet"
+            ];
+            return $this->db->executeQuery($insertTransactionQuery, $insertTransactionParams);
+        }
+        $responseData = [
+            'status' => false,
+            'server_response' => 'Failed',
+            'server_message' => "Action failed: unable to charge user",
+            'data' => []
         ];
-        return $this->db->executeQuery($insertTransactionQuery, $insertTransactionParams);
+        return Helper::jsonResponse($responseData, 400);
+
     }
 
-    private function verifyUser(mixed $apiKey)
+    private function checkUserExist(mixed $apiKey): bool
+    {
+        $User = new User($this->db);
+        if ($User->getUserIdByApiKey($apiKey)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private function verifyUser(mixed $apiKey): bool
     {
         $User = new User($this->db);
         if ($User->getUserIdByApiKey($apiKey)) {

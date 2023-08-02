@@ -89,12 +89,12 @@ class Vtpass
 
     public function education()
     {
-
+        return true;
     }
 
     public function electricity()
     {
-
+        return true;
     }
 
     public function getRequest($host)
