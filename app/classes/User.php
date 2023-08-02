@@ -5,18 +5,21 @@ namespace App\classes;
 class User
 {
     private $db;
+    private $userId;
+    private $requestData;
 
-    public function __construct(DB $db)
+    public function __construct(DB $db, array $requestData)
     {
         $this->db = $db;
+        $this->userId = $requestData['userId'];
+        $this->requestData = $requestData;
     }
 
-    public function getUserDetails($userIdentifier)
+    public function getUserDetails()
     {
-        $getUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users WHERE id = ? OR api_key = ?";
+        $getUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users WHERE id = ?";
         $getUserParams = [
-            $userIdentifier,
-            $userIdentifier
+            $this->userId
         ];
         return $this->db->fetchRow($getUserQuery, $getUserParams);
     }
@@ -28,42 +31,62 @@ class User
         return $this->db->fetchArray($getAllUserQuery, $getAllUserParams);
     }
 
-    Public function deleteUser($userIdentifier)
+    Public function deleteUser()
     {
-        $deleteUserQuery = "DELETE FROM user WHERE id = ? OR api_key = ?";
+//        $userIdentifier
+        $deleteUserQuery = "DELETE FROM user WHERE id = ?";
         $deleteUserParams = [
-            $userIdentifier,
-            $userIdentifier
+            $this->userId
         ];
         return $this->db->executeQuery($deleteUserQuery, $deleteUserParams);
     }
 
-    public function createUser($data)
+    public function createUser()
     {
-        $Auth = new Auth($this->db, $data);
+        $Auth = new Auth($this->db, $this->requestData);
         return $Auth->register();
     }
 
-    public function updateUser($apiKey)
+    public function updateUser()
     {
-        $userId = $this->getUserIdByApiKey($apiKey);
         $updateUserQuery = "UPDATE users SET first_name = ?, last_name = ?, user_name = ?, type = ? WHERE id = ?";
         $updateUserParams = [
-            $this->firstName,
-            $this->lastName,
-            $this->userName,
-            $userId
+            $this->requestData['firstName'],
+            $this->requestData['lastName'],
+            $this->requestData['userName'],
+            $this->userId
         ];
         return $this->db->executeQuery($updateUserQuery, $updateUserParams);
     }
-
-    public function getUserIdByApiKey($apiKey): array
+    public function getUserIdByApiKey(): array
     {
         $getUserId = "SELECT id FROM users WHERE api_key = ?";
         $getUserIdParams = [
-            $apiKey
+            $this->requestData['apiKey']
         ];
-        return $this->db->fetchRow($getUserId, $getUserIdParams);
+        $getUserIdResult = $this->db->fetchRow($getUserId, $getUserIdParams);
+        return $getUserIdResult['id'];
+    }
+
+    // TODO: move to wallet class
+    public function getUserWalletBalance()
+    {
+        $getWalletQuery = "SELECT wallet_balance FROM user_wallet WHERE user_id = ?";
+        $getWalletParams = [
+            $this->userId
+        ];
+        $getWalletResult = $this->db->fetchRow($getWalletQuery, $getWalletParams);
+        return $getWalletResult['wallet_balance'];
+    }
+
+    public function chargeUserWallet(): bool
+    {
+        $chargeUserQuery = "UPDATE user_wallet SET wallet_balance = wallet_balance - ? WHERE user_id = ?";
+        $chargeUserParams = [
+            $this->requestData['amount'],
+            $this->userId
+        ];
+        return $this->db->executeQuery($chargeUserQuery, $chargeUserParams);
     }
 
 }
