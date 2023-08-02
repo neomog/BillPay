@@ -19,19 +19,19 @@ class Router
     private string $liveApiKey = 'https://api-service.vtpass.com/api/';
     private $vendor;
     private $db;
-    private $data_input;
     private $apiKey;
     private $amount;
+    private $requestData;
 
-    public function __construct($db, $data)
+    public function __construct($db, $requestData)
     {
         $this->db = $db;
-        if ($this->checkUserExist($data['apiKey'])) {
-            $this->apiKey = $data['apiKey'];
-            $this->amount = $data['amount'];
+        if ($this->checkUserExist($requestData['apiKey'])) {
+            $this->apiKey = $requestData['apiKey'];
+            $this->amount = $requestData['amount'];
             $Helper = new Helper();
             $data['requestId'] = $Helper->generateRequestId();
-            $this->data_input = $data;
+            $this->requestData = $requestData;
             $this->vendor = new Vtpass($data);
         } else {
             $responseData = [
@@ -202,7 +202,7 @@ class Router
 
     public function recordTransaction($transactionType)
     {
-        $User = new User($this->db);
+        $User = new User($this->db, $this->requestData);
         $Wallet = new Wallet($this->db);
 
         // check that user has sufficient funds to perform operation
@@ -221,14 +221,14 @@ class Router
         $chargeUser = $Wallet->chargeUserWallet($this->apiKey, $this->amount);
         if ($chargeUser) {
             // record recharge transaction
-            $userIdRequest = $User->getUserIdByApiKey($this->data_input['apiKey']);
+            $userIdRequest = $User->getUserIdByApiKey();
             $insertTransactionQuery = "INSERT INTO recharge_transactions (user_id, vendor, request_id, status, transaction_amount, transaction_type, payment_method, date_created, date_updated) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
             $insertTransactionParams = [
                 $userIdRequest,
                 "vtpass",
-                $this->data_input['requestId'],
+                $this->requestData['requestId'],
                 "pending",
-                $this->data_input['amount'],
+                $this->requestData['amount'],
                 $transactionType,
                 "wallet"
             ];
@@ -246,7 +246,7 @@ class Router
 
     private function checkUserExist(mixed $apiKey): bool
     {
-        $User = new User($this->db);
+        $User = new User($this->db, );
         if ($User->getUserIdByApiKey($apiKey)) {
             return true;
         } else {
