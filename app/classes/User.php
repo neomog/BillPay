@@ -2,63 +2,80 @@
 
 namespace App\classes;
 
+use App\classes\vendors\Vtpass;
+use App\classes\Router;
+
 class User
 {
     private $db;
     private $userId;
     private $requestData;
+    private $apiKey;
 
     public function __construct(DB $db, array $requestData)
     {
         $this->db = $db;
-        $this->userId = $requestData['userId'];
         $this->requestData = $requestData;
+//        $this->requestData = $requestData;
+        if ($this->getUserIdByApiKey()) {
+            $this->userId = $this->getUserIdByApiKey();
+            $this->apiKey = $requestData['apiKey'];
+
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => "Unauthorised user",
+            ];
+            return Helper::jsonResponse($responseData);
+        }
     }
 
-    public function getUserDetails()
+    public function getUserDetails(): string
     {
         $getUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users WHERE id = ?";
         $getUserParams = [
             $this->userId
         ];
-        return $this->db->fetchRow($getUserQuery, $getUserParams);
+        return json_encode($this->db->fetchRow($getUserQuery, $getUserParams));
     }
 
-    public function getAllUserDetails()
+    public function getAllUserDetails(): string
     {
         $getAllUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users";
         $getAllUserParams = [];
-        return $this->db->fetchArray($getAllUserQuery, $getAllUserParams);
+        return json_encode($this->db->fetchAll($getAllUserQuery, $getAllUserParams));
     }
 
-    Public function deleteUser()
+    Public function deleteUser(): bool
     {
 //        $userIdentifier
-        $deleteUserQuery = "DELETE FROM user WHERE id = ?";
+        $deleteUserQuery = "DELETE FROM users WHERE id = ?";
         $deleteUserParams = [
             $this->userId
         ];
         return $this->db->executeQuery($deleteUserQuery, $deleteUserParams);
     }
 
-    public function createUser()
+    public function createUser(): string
     {
         $Auth = new Auth($this->db, $this->requestData);
         return $Auth->register();
     }
 
-    public function updateUser()
+    public function updateUser(): bool
     {
         $updateUserQuery = "UPDATE users SET first_name = ?, last_name = ?, user_name = ?, type = ? WHERE id = ?";
         $updateUserParams = [
             $this->requestData['firstName'],
             $this->requestData['lastName'],
             $this->requestData['userName'],
+            $this->requestData['userType'],
             $this->userId
         ];
         return $this->db->executeQuery($updateUserQuery, $updateUserParams);
     }
-    public function getUserIdByApiKey(): array
+    public function getUserIdByApiKey(): int
     {
         $getUserId = "SELECT id FROM users WHERE api_key = ?";
         $getUserIdParams = [

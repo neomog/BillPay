@@ -1,3 +1,5 @@
 /vendor/
 /mysqldata/
 /.gitignore
+.phpunit.result.cache
+ghy.php

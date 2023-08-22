@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     } else {
         // Handle endpoint not found with a 404 status
-        $response = Helper::jsonResponse(['error' => 'Endpoint not found'], 404);
+        $response = Helper::jsonResponse(['error' => 'Endpoint not found ', 'myRequest' => $apiRequest], 404);
     }
 
 

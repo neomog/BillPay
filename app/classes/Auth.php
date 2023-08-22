@@ -41,8 +41,8 @@ class Auth
         } else {
             $errorMessage['email'] = 'Empty filed';
         }
-        if(!empty($data['phone'])) {
-            $phone = filter_var($data['phone'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        if(!empty($data['phoneNumber'])) {
+            $phone = filter_var($data['phoneNumber'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         } else {
             $errorMessage['phone'] = 'Empty filed';
         }
@@ -50,7 +50,7 @@ class Auth
 
         if(!$errorMessage) {
             $checkUserQuery = 'SELECT * FROM users WHERE email = ? OR mobile = ?';
-            $checkUserParams = [$data['email'], $data['phone']];
+            $checkUserParams = [$data['email'], $data['phoneNumber']];
             $isUserExist = $this->db->fetchRow($checkUserQuery, $checkUserParams);
 
             if (!$isUserExist) {
@@ -108,7 +108,7 @@ class Auth
                 $responseData = [
                     'status' => false,
                     'server_response' => 'Failed',
-                    'server_message' => 'User with email already exists; Login with password'
+                    'server_message' => 'User with email or phone number already exists; Login with password'
                 ];
                 return Helper::jsonResponse($responseData, 400);
             }
