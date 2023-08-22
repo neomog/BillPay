@@ -59,7 +59,7 @@ class Vtpass
         return $this->getRequest($host);
     }
 
-    public function airtime(): bool|string
+    public function airtime(): array
     {
         $serviceOptionId = $this->serviceOptionCode; // mtn, airtel, glo, 9mobile
         $host = $this->sandboxApiUrl . 'pay';
@@ -140,7 +140,14 @@ class Vtpass
             CURLOPT_POSTFIELDS => $requestData
         );
         curl_setopt_array($curl, $curl_option_array);
-        return curl_exec($curl);
+        $vendorResponse = curl_exec($curl);
+
+        return $this->formatVendorResponse($vendorResponse);
+    }
+
+    public function formatVendorResponse($vendorResponse)
+    {
+        return json_decode($vendorResponse, true);
     }
 
     public function __destruct()

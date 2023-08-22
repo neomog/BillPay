@@ -13,9 +13,8 @@ class Wallet
 
     public function getUserWalletBalance($identifier)
     {
-        $getWalletQuery = "SELECT wallet_balance FROM user_wallet WHERE user_id = ? OR api_key = ?";
+        $getWalletQuery = "SELECT wallet_balance FROM user_wallet WHERE user_id = ?";
         $getWalletParams = [
-            $identifier,
             $identifier
         ];
         $getWalletResult = $this->db->fetchRow($getWalletQuery, $getWalletParams);
@@ -24,10 +23,9 @@ class Wallet
 
     public function chargeUserWallet($identifier, $amount): bool
     {
-        $chargeUserQuery = "UPDATE user_wallet SET wallet_balance = wallet_balance - ? WHERE user_id = ? OR api_key = ?";
+        $chargeUserQuery = "UPDATE user_wallet SET wallet_balance = wallet_balance - ? WHERE user_id = ?";
         $chargeUserParams = [
             $amount,
-            $identifier,
             $identifier
         ];
         return $this->db->executeQuery($chargeUserQuery, $chargeUserParams);
