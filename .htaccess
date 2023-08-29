@@ -1,11 +1,6 @@
-# Allow cross-origin requests from a specific origin (e.g., http://localhost:3000)
-Header set Access-Control-Allow-Origin "http://localhost:3000"
-
-# Allow specific HTTP methods
-Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
-
-# Allow specific headers
-Header set Access-Control-Allow-Headers "Origin, Content-Type, Accept"
-
-# Allow credentials (if needed)
-Header set Access-Control-Allow-Credentials "true"
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
