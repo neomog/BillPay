@@ -12,6 +12,7 @@ require ROOT . '/vendor/autoload.php';
 use App\classes\User;
 use App\classes\DB;
 use App\classes\Helper;
+use App\classes\Utility;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -20,12 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $text_data_array = json_decode($text_data, true);
     $apiRequest = (array)$apiRequest + (array)$text_data_array;
 
-
-    $dbHost = 'mysql';
-    $dbUser = 'root';
-    $dbName = 'billpay';
-    $dbPassword = 'rootpassword';
-    $dbConnection = new DB($dbHost, $dbUser, $dbName, $dbPassword);
+    $Utility = new Utility();
+    $dbConnection = $Utility->getConnection();
 
 // Define your API endpoints and their corresponding callbacks
     $endpoints = [
@@ -47,13 +44,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'getUserWalletBalance' => 'UserRouter',
 
         // SERVICES
-        'getServices' => 'Router',
-        'getServiceOptions' => 'Router',
-        'getVariationCodes' => 'Router',
-        'airtime' => 'Router',
-        'data' => 'Router',
-        'education' => 'Router',
-        'electricity' => 'Router'
+        'getServices' => 'ServiceRouter',
+        'getServiceOptions' => 'ServiceRouter',
+        'getVariationCodes' => 'ServiceRouter',
+        'airtime' => 'ServiceRouter',
+        'data' => 'ServiceRouter',
+        'education' => 'ServiceRouter',
+        'electricity' => 'ServiceRouter'
 
         // Add more endpoints here as needed
     ];

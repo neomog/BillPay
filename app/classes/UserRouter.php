@@ -8,22 +8,12 @@ class UserRouter
     private $db;
     private $requestData;
     private User $User;
-    private $requestId;
 
     public function __construct($db, $requestData)
     {
         $this->db = $db;
         $this->requestData = $requestData;
         $this->User = new User($this->db, $this->requestData);
-//        else {
-//            $responseData = [
-//                'status' => false,
-//                'server_response' => 'Failed',
-//                'server_message' => "Unauthorised user",
-//            ];
-//            return Helper::jsonResponse($responseData);
-//        }
-
     }
 
     public function balance(): string
@@ -68,15 +58,6 @@ class UserRouter
     public function activate(): string
     {
         $User = $this->User;
-        if (!$User->checkUserExist()) {
-            $responseData = [
-                'status' => false,
-                'server_response' => 'Failed',
-                'server_message' => "Unauthorised user",
-            ];
-            return Helper::jsonResponse($responseData, 401);
-
-        }
         $activate = $User->activateUser();
 
         if ($activate) {

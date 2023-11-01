@@ -5,6 +5,13 @@ namespace App\classes;
 class Utility
 {
 
+    public array $dbDetails;
+
+    public function __construct()
+    {
+
+    }
+
 
     /**
      ** convert input array to a csv file and force downlaod the same
@@ -171,6 +178,57 @@ class Utility
         // keywords
 //        $blocked_keywords = explode(',', strtolower($platform['blocked_msg_keywords']));
 //        $blocked_keywords = array_map('trim', $blocked_msg_keywords);
+    }
+
+    /*****************************************
+     * ***************************************
+     * compare string to an array for blocked*
+     * keywords                              *
+     * ***************************************
+     *****************************************/
+    private function getDbConnDetails(): void
+    {
+        $envFilePath = dirname(__DIR__, 2) . '/.env'; // Adjust the path to your .env file
+//        $envVars = (new Utility)->parseEnvFile($envFilePath);
+        $envVars = $this->parseEnvFile($envFilePath);
+        $this->dbDetails = $envVars;
+    }
+
+    private function parseEnvFile($filePath): array
+    {
+        $envData = file_get_contents($filePath);
+
+        if ($envData === false) {
+            return [];
+        }
+
+        $lines = explode("\n", $envData);
+        $envVars = [];
+
+        foreach ($lines as $line) {
+            $line = trim($line);
+
+            if (empty($line) || strpos($line, '#') === 0) {
+                continue; // Skip empty lines and comments
+            }
+
+            list($key, $value) = explode('=', $line, 2);
+            $envVars[$key] = $value;
+        }
+
+        return $envVars;
+    }
+
+    public function getConnection(): DB
+    {
+        $this->getDbConnDetails();
+        $connDetails = $this->dbDetails;
+        $dbHost = $connDetails['DATABASE_HOST'];
+        $dbUser = $connDetails['DATABASE_USER'];
+        $dbName = $connDetails['DATABASE_NAME'];
+        $dbPassword = $connDetails['DATABASE_PASS'];;
+        return new DB($dbHost, $dbUser, $dbName, $dbPassword);
+
     }
 
 }
