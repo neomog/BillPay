@@ -7,6 +7,8 @@ use App\classes\vendors\Vtpass;
 class Router
 {
 
+
+    // TODO:  move method to become independent
 //For GET request you’ll need to pass the api-key and public-key through the request header.
 //api-key: xxxxxxxxxxxxxxxxxxxx
 //public-key: PK_xxxxxxxxxxxxxxxxx
@@ -29,8 +31,8 @@ class Router
         $this->db = $db;
         $this->requestData = $requestData;
         if ($this->checkUserExist()) {
-            $this->apiKey = $requestData['apiKey'];
-            $this->amount = $requestData['amount'];
+            $this->apiKey = $requestData['apiKey'] ?? "";
+            $this->amount = $requestData['amount'] ?? "";
             $Helper = new Helper();
             $this->requestId = $requestData['requestId'] = $Helper->generateRequestId();
             $this->vendor = new Vtpass($requestData);
@@ -46,13 +48,28 @@ class Router
 
     }
 
-    public function balance(): string
+    public function vendorBalance(): string
     {
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
             'data' => $this->vendor->balance()
+        ];
+        return Helper::jsonResponse($responseData);
+    }
+
+    public function balance(): string
+    {
+        $User = new User($this->db, $this->requestData);
+        $Wallet = new Wallet($this->db);
+        $userId = $User->getUserIdByApiKey();
+
+        $responseData = [
+            'status' => true,
+            'server_response' => 'Success',
+            'server_message' => "Action completed successfully",
+            'data' => number_format($Wallet->getUserWalletBalance($userId), 2)
         ];
         return Helper::jsonResponse($responseData);
     }

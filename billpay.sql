@@ -27,7 +27,7 @@ CREATE TABLE recharge_transactions (
                                        FOREIGN KEY (user_id) REFERENCES users(id),
                                        `vendor` VARCHAR(100) NOT NULL,
                                        `request_id` VARCHAR(50) NOT NULL,
-                                       `transactionId` VARCHAR(50),
+                                       `transaction_id` VARCHAR(50),
                                        `vendor_response` TEXT,
                                        `status` ENUM('pending', 'success', 'failure') NOT NULL,
                                        `phone_number` VARCHAR(20),
@@ -35,7 +35,8 @@ CREATE TABLE recharge_transactions (
                                        `transaction_type` ENUM('airtime', 'data', 'electricity'),
                                        `payment_method` ENUM('credit_card', 'bank_transfer', 'wallet', 'cash'),
                                        `date_created` TIMESTAMP NOT NULL,
-                                       `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+                                       `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                                       FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
 -- user_wallet table
@@ -45,7 +46,7 @@ CREATE TABLE `user_wallet`(
                               `wallet_balance` DECIMAL(11, 2) NOT NULL DEFAULT '0.00',
                               `date_created` TIMESTAMP NOT NULL,
                               `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                              FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
+                              FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `user_wallet` (`id`, `user_id`, `wallet_balance`, `date_created`, `date_updated`) VALUES ('1', '1', '0.00', NOW(), current_timestamp());

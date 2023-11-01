@@ -9,6 +9,7 @@ define("ROOT", dirname(__DIR__));
 
 require ROOT . '/vendor/autoload.php';
 
+use App\classes\User;
 use App\classes\DB;
 use App\classes\Helper;
 
@@ -28,23 +29,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // Define your API endpoints and their corresponding callbacks
     $endpoints = [
+        // AUTH
         'register' => 'Auth',
         'login' => 'Auth',
         'resetPassword' => 'Auth',
-        'balance' => 'Router',
+
+        // USER
+        'deactivate' => 'UserRouter',
+        'activate' => 'UserRouter',
+        'delete' => 'UserRouter',
+        'balance' => 'UserRouter',
+        'getUserDetails' => 'UserRouter',
+        'getAllUserDetails' => 'UserRouter',
+        'deleteUser' => 'UserRouter',
+        'createUser' => 'UserRouter',
+        'updateUser' => 'UserRouter',
+        'getUserWalletBalance' => 'UserRouter',
+
+        // SERVICES
         'getServices' => 'Router',
         'getServiceOptions' => 'Router',
         'getVariationCodes' => 'Router',
         'airtime' => 'Router',
         'data' => 'Router',
         'education' => 'Router',
-        'electricity' => 'Router',
-        'getUserDetails' => 'User',
-        'getAllUserDetails' => 'User',
-        'deleteUser' => 'User',
-        'createUser' => 'User',
-        'updateUser' => 'User',
-        'getUserWalletBalance' => 'User'
+        'electricity' => 'Router'
+
         // Add more endpoints here as needed
     ];
     // TODO: generate request id
@@ -55,8 +65,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $callbackClass = 'App\classes\\' . $endpoints[$callback];
 
         if (class_exists($callbackClass)) {
-            $classInstance = new $callbackClass($dbConnection, $apiRequest);
-            $response = $classInstance->$callback();
+
+            if ($callback !== ('login' || 'register')) {
+                $classInstance = new $callbackClass($dbConnection, $apiRequest);
+                $response = $classInstance->$callback();
+            } else {
+                $apiKey = filter_var($apiRequest['apiKey'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? "";
+                if (User::checkUserExists($dbConnection, $apiKey)) {
+                    $classInstance = new $callbackClass($dbConnection, $apiRequest);
+                    $response = $classInstance->$callback();
+                } else {
+                    $response = Helper::jsonResponse(['error' => 'Invalid api key'], 401);
+                }
+            }
+
         } else {
             // Handle endpoint not found with a 404 status
             $response = Helper::jsonResponse(['error' => 'Class '.$callbackClass.' not found'], 404);
@@ -72,6 +94,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     echo '<pre>';
     echo 'SEEING THIS MEANS YOU GOT IN';
+    echo "\n";
+    echo 'NB: METHOD NOT ALLOWED';
     echo '</pre>';
 }
 

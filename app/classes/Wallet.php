@@ -4,21 +4,43 @@ namespace App\classes;
 
 class Wallet
 {
-    private $db;
+    private DB $db;
+    private string $balance;
 
-    public function __construct($db)
+    public function __construct(DB $db)
     {
         $this->db = $db;
     }
 
-    public function getUserWalletBalance($identifier)
+    /**
+     * @param $identifier
+     * @return int|float
+     */
+    public function getUserWalletBalance($identifier): string
     {
         $getWalletQuery = "SELECT wallet_balance FROM user_wallet WHERE user_id = ?";
         $getWalletParams = [
             $identifier
         ];
         $getWalletResult = $this->db->fetchRow($getWalletQuery, $getWalletParams);
-        return $getWalletResult['wallet_balance'];
+        if ($getWalletResult) {
+            $this->balance = $getWalletResult['wallet_balance'];
+            return $getWalletResult['wallet_balance'];
+        }
+        return '0.00';
+    }
+
+    /**
+     * @param $serviceCost
+     * @return bool
+     */
+    public function checkSufficientBalance($serviceCost): bool
+    {
+        $balance = $this->balance;
+        if ($serviceCost < $balance) {
+            return true;
+        }
+        return false;
     }
 
     public function chargeUserWallet($identifier, $amount): bool
