@@ -4,7 +4,7 @@ namespace App\classes;
 
 use App\classes\vendors\Vtpass;
 
-class Router
+class ServiceRouter
 {
 
 
@@ -30,21 +30,17 @@ class Router
     {
         $this->db = $db;
         $this->requestData = $requestData;
-        if ($this->checkUserExist()) {
-            $this->apiKey = $requestData['apiKey'] ?? "";
-            $this->amount = $requestData['amount'] ?? "";
-            $Helper = new Helper();
-            $this->requestId = $requestData['requestId'] = $Helper->generateRequestId();
-            $this->vendor = new Vtpass($requestData);
-        } else {
-            $responseData = [
-                'status' => false,
-                'server_response' => 'Failed',
-                'server_message' => "Unauthorised user",
-            ];
-            return Helper::jsonResponse($responseData);
-        }
-        // TODO: write function that processes transaction and calls other functions
+        $this->apiKey = $requestData['apiKey'] ?? "";
+        $this->amount = $requestData['amount'] ?? "";
+        $Helper = new Helper();
+        $this->requestId = $requestData['requestId'] = $Helper->generateRequestId();
+        // TODO: get vendor dynamic to make robust
+        // $vendor = $requestData['vendor'];
+        // $this->vendor = new $vendor($requestData);
+        // TODO: write a method that is called to handle all
+        // operation before routing
+        $this->vendor = new Vtpass($requestData);
+    // TODO: write function that processes transaction and calls other functions
 
     }
 
@@ -122,7 +118,7 @@ class Router
                         'server_message' => "Client Error: Invalid request",
                         'data' => $updateRecord
                     ];
-                    return Helper::jsonResponse($responseData);
+                    return Helper::jsonResponse($responseData, 400);
                 }
 
                 $responseData = [
@@ -151,8 +147,8 @@ class Router
     public function data(): string
     {
         $processRequest = $this->recordTransaction('data');
-        $checkProcessRequest = json_decode($processRequest, true);
-        if ($checkProcessRequest['data']['status']) {
+
+        if ($processRequest['status']) {
             $vendorResponse = $this->vendor->data();
             if ($vendorResponse) {
                 $responseData = [
@@ -162,17 +158,16 @@ class Router
                     'data' => $vendorResponse
                 ];
                 return Helper::jsonResponse($responseData);
-            } else {
-                $responseData = [
-                    'status' => false,
-                    'server_response' => 'Failed',
-                    'server_message' => "Action failed, either vendor error or network error",
-                    'data' => $vendorResponse
-                ];
-                return Helper::jsonResponse($responseData, 400);
             }
+
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => "Action failed, either vendor error or network error",
+                'data' => $vendorResponse
+            ];
+            return Helper::jsonResponse($responseData, 400);
         }
-        return $processRequest;
     }
 
     public function education(): string
@@ -229,7 +224,7 @@ class Router
         return $processRequest;
     }
 
-    public function recordTransaction($transactionType)
+    public function recordTransaction($transactionType): array
     {
         $User = new User($this->db, $this->requestData);
         $Wallet = new Wallet($this->db);
@@ -244,7 +239,6 @@ class Router
                 'server_message' => "Action failed: insufficient funds",
                 'data' => []
             ];
-            return Helper::jsonResponse($responseData, 400);
         }
 
         // charge user wallet before rendering service
@@ -252,7 +246,7 @@ class Router
         if ($chargeUser) {
             // record recharge transaction
             $userIdRequest = $User->getUserIdByApiKey();
-            $insertTransactionQuery = "INSERT INTO recharge_transactions (user_id, vendor, request_id, status, transaction_amount, transaction_type, payment_method, date_created, date_updated) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
+            $insertTransactionQuery = "INSERT INTO recharge_transaction (user_id, vendor, request_id, status, transaction_amount, transaction_type, payment_method, date_created, date_updated) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
             $insertTransactionParams = [
                 $userIdRequest,
                 "vtpass",
@@ -262,19 +256,32 @@ class Router
                 $transactionType,
                 "wallet"
             ];
-            return $this->db->executeQuery($insertTransactionQuery, $insertTransactionParams);
+
+            if ($this->db->executeQuery($insertTransactionQuery, $insertTransactionParams)) {
+                $responseData = [
+                    'status' => true,
+                    'server_response' => 'Success',
+                    'server_message' => "User charge completed",
+                ];
+            }
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => "Action failed: unable to charge user",
+                'data' => []
+            ];
         }
-        $responseData = [
-            'status' => false,
-            'server_response' => 'Failed',
-            'server_message' => "Action failed: unable to charge user",
-            'data' => []
-        ];
-        return Helper::jsonResponse($responseData, 400);
+
+        return $responseData;
 
     }
 
-    public function updateTransactionRecord($vendorResponse)
+    /**
+     * @param $vendorResponse
+     * @return string|bool
+     */
+    public function updateTransactionRecord($vendorResponse): string|bool
     {
         if ($vendorResponse['code'] == 012 || '012') {
             $responseData = [
@@ -286,7 +293,7 @@ class Router
             return Helper::jsonResponse($responseData, 400);
         }
         // update transaction record
-        $updateTransactionQuery = "UPDATE recharge_transactions SET transaction_id = ?, vendor_response = ?, phone_number = ? WHERE request_id = ?";
+        $updateTransactionQuery = "UPDATE recharge_transaction SET transaction_id = ?, vendor_response = ?, phone_number = ? WHERE request_id = ?";
         $updateTransactionParams = [
             $vendorResponse['content']['transactions']['transactionId'],
             json_encode($vendorResponse),
@@ -307,26 +314,6 @@ class Router
 
         return true;
 
-    }
-
-    public function checkUserExist(): bool
-    {
-        $User = new User($this->db, $this->requestData);
-        if ($User->getUserIdByApiKey()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    private function verifyUser(mixed $apiKey): bool
-    {
-        $User = new User($this->db, $this->requestData);
-        if ($User->getUserIdByApiKey($apiKey)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
     public function __destruct()

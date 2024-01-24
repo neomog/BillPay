@@ -15,7 +15,8 @@ class Auth
 
     /**
      * @return string
-     *@throws \Exception
+     * @throws \Exception
+     * @return string
      */
     public function register(): string
     {
@@ -135,7 +136,7 @@ class Auth
         }
 
         if(!empty($loginId) && !empty($data['password'])) {
-            $selectUserQuery = "SELECT first_name, last_name, user_name, email, password, salt, gender, mobile, type, status, api_key  FROM users WHERE user_name = ? OR email = ?";
+            $selectUserQuery = "SELECT first_name, last_name, user_name, email, password, salt, gender, mobile, type, status, api_key, auth_token  FROM users WHERE user_name = ? OR email = ?";
             $selectUserParams = [$loginId, $loginId];
             $isUserExist = $this->db->fetchRow($selectUserQuery, $selectUserParams);
 
@@ -155,6 +156,7 @@ class Auth
                     $userType = $isUserExist['type'];
                     $status = $isUserExist['status'];
                     $apiKey = $isUserExist['api_key'];
+                    $userToken = $isUserExist['auth_token'];
 
                     $message = "Login successful";
                     $responseData = [
@@ -169,6 +171,7 @@ class Auth
                             'phone' => $phone,
                             'userType' => $userType,
                             'status' => $status,
+                            'userToken' => $userToken,
                             'apiKey' => $apiKey
                         ]
                     ];

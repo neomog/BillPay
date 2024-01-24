@@ -16,24 +16,13 @@ class User
     {
         $this->db = $db;
         $this->requestData = $requestData;
-//        $this->requestData = $requestData;
-        if ($this->getUserIdByApiKey()) {
-            $this->userId = $this->getUserIdByApiKey();
-            $this->apiKey = $requestData['apiKey'];
-
-        } else {
-            $responseData = [
-                'status' => false,
-                'server_response' => 'Failed',
-                'server_message' => "Unauthorised user",
-            ];
-            return Helper::jsonResponse($responseData);
-        }
+        $this->userId = $this->getUserIdByApiKey();
+        $this->apiKey = $requestData['apiKey'];
     }
 
     public function getUserDetails(): string
     {
-        $getUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users WHERE id = ?";
+        $getUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM user WHERE id = ?";
         $getUserParams = [
             $this->userId
         ];
@@ -42,7 +31,7 @@ class User
 
     public function getAllUserDetails(): string
     {
-        $getAllUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users";
+        $getAllUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM user";
         $getAllUserParams = [];
         return json_encode($this->db->fetchAll($getAllUserQuery, $getAllUserParams));
     }
@@ -50,11 +39,15 @@ class User
     Public function deleteUser(): bool
     {
 //        $userIdentifier
-        $deleteUserQuery = "DELETE FROM users WHERE id = ?";
+        $deleteUserQuery = "DELETE FROM user WHERE id = ?";
         $deleteUserParams = [
             $this->userId
         ];
-        return $this->db->executeQuery($deleteUserQuery, $deleteUserParams);
+
+        if ($this->db->executeQuery($deleteUserQuery, $deleteUserParams)) {
+            return true;
+        }
+        return false;
     }
 
     public function createUser(): string
@@ -63,9 +56,12 @@ class User
         return $Auth->register();
     }
 
-    public function updateUser(): bool
+    /**
+     * @return bool
+     */
+    public function adminUpdateUser(): bool
     {
-        $updateUserQuery = "UPDATE users SET first_name = ?, last_name = ?, user_name = ?, type = ? WHERE id = ?";
+        $updateUserQuery = "UPDATE user SET first_name = ?, last_name = ?, user_name = ?, type = ? WHERE id = ?";
         $updateUserParams = [
             $this->requestData['firstName'],
             $this->requestData['lastName'],
@@ -75,14 +71,89 @@ class User
         ];
         return $this->db->executeQuery($updateUserQuery, $updateUserParams);
     }
+
+    /**
+     * @return bool
+     */
+    public function updateUser(): bool
+    {
+        $updateUserQuery = "UPDATE user SET first_name = ?, last_name = ?, user_name = ? WHERE id = ?";
+        $updateUserParams = [
+            $this->requestData['firstName'],
+            $this->requestData['lastName'],
+            $this->requestData['userName'],
+            $this->userId
+        ];
+
+        if ($this->db->executeQuery($updateUserQuery, $updateUserParams)) {
+            return true;
+        }
+        return false;
+    }
+
     public function getUserIdByApiKey(): int
     {
-        $getUserId = "SELECT id FROM users WHERE api_key = ?";
+        $getUserIdQuery = "SELECT id FROM user WHERE api_key = ?";
         $getUserIdParams = [
             $this->requestData['apiKey']
         ];
-        $getUserIdResult = $this->db->fetchRow($getUserId, $getUserIdParams);
-        return $getUserIdResult['id'];
+        $getUserIdResult = $this->db->fetchRow($getUserIdQuery, $getUserIdParams);
+        if ($getUserIdResult) {
+            return $getUserIdResult['id'];
+        }
+        return 0;
+
+    }
+
+    public static function checkUserExists(DB $db, $apiKey): int
+    {
+        $getUserIdQuery = "SELECT id FROM user WHERE api_key = ?";
+        $getUserIdParams = [
+            $apiKey
+        ];
+        $getUserIdResult = $db->fetchRow($getUserIdQuery, $getUserIdParams);
+        if ($getUserIdResult > 0) {
+            return $getUserIdResult['id'];
+        }
+        return 0;
+
+    }
+
+    public function checkUserExist(): bool
+    {
+        if ($this->getUserIdByApiKey()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function activateUser(): bool
+    {
+        $activateUserQuery = "UPDATE user SET status = ? WHERE id = ?";
+        $activateUserParams = [
+            'active',
+            $this->userId
+        ];
+
+        if ($this->db->executeQuery($activateUserQuery, $activateUserParams)) {
+            return true;
+        }
+        return false;
+    }
+
+    public function deactivateUser(): bool
+    {
+        $activateUserQuery = "UPDATE user SET status = ? WHERE id = ?";
+        $activateUserParams = [
+            'deactivated',
+            $this->userId
+        ];
+
+        if ($this->db->executeQuery($activateUserQuery, $activateUserParams)) {
+            return true;
+        }
+        return false;
     }
 
     // TODO: move to wallet class

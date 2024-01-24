@@ -3,3 +3,7 @@
 /.gitignore
 .phpunit.result.cache
 ghy.php
+.env
+phpunit.xml
+/tests/
+/.idea/

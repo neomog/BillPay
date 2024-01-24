@@ -22,4 +22,30 @@ class Logger
         $formattedError = date('[Y-m-d H:i:s]') . ' ' . $errorMessage . PHP_EOL;
         file_put_contents($this->logFilePath, $formattedError, FILE_APPEND | LOCK_EX);
     }
+
+    public static function log($filename, $txt_data): void
+    {
+        $path = dirname(__DIR__, 2) . '/logs';
+        $directoryName = $path . '/' . date('m-d-Y') . "/";
+
+        if (is_object($txt_data)) {
+            $txt_data = json_decode(json_encode($txt_data), true);
+        }
+
+        if (is_array($txt_data)) {
+            $txt_data = json_encode($txt_data);
+        }
+
+        if (!is_dir($path)) {
+            mkdir($path, 0755);
+        }
+
+        if (!is_dir($directoryName)) {
+            mkdir($directoryName, 0755);
+        }
+
+        $filePath = $directoryName . $filename . ".txt";
+        file_put_contents($filePath, $txt_data . "\r\n", FILE_APPEND);
+    }
+
 }
