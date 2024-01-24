@@ -22,7 +22,7 @@ class User
 
     public function getUserDetails(): string
     {
-        $getUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users WHERE id = ?";
+        $getUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM user WHERE id = ?";
         $getUserParams = [
             $this->userId
         ];
@@ -31,7 +31,7 @@ class User
 
     public function getAllUserDetails(): string
     {
-        $getAllUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM users";
+        $getAllUserQuery = "SELECT id, first_name, last_name, user_name, email, gender, mobile, type, status, api_key, date_created, date_updated FROM user";
         $getAllUserParams = [];
         return json_encode($this->db->fetchAll($getAllUserQuery, $getAllUserParams));
     }
@@ -39,7 +39,7 @@ class User
     Public function deleteUser(): bool
     {
 //        $userIdentifier
-        $deleteUserQuery = "DELETE FROM users WHERE id = ?";
+        $deleteUserQuery = "DELETE FROM user WHERE id = ?";
         $deleteUserParams = [
             $this->userId
         ];
@@ -61,7 +61,7 @@ class User
      */
     public function adminUpdateUser(): bool
     {
-        $updateUserQuery = "UPDATE users SET first_name = ?, last_name = ?, user_name = ?, type = ? WHERE id = ?";
+        $updateUserQuery = "UPDATE user SET first_name = ?, last_name = ?, user_name = ?, type = ? WHERE id = ?";
         $updateUserParams = [
             $this->requestData['firstName'],
             $this->requestData['lastName'],
@@ -77,7 +77,7 @@ class User
      */
     public function updateUser(): bool
     {
-        $updateUserQuery = "UPDATE users SET first_name = ?, last_name = ?, user_name = ? WHERE id = ?";
+        $updateUserQuery = "UPDATE user SET first_name = ?, last_name = ?, user_name = ? WHERE id = ?";
         $updateUserParams = [
             $this->requestData['firstName'],
             $this->requestData['lastName'],
@@ -93,7 +93,7 @@ class User
 
     public function getUserIdByApiKey(): int
     {
-        $getUserIdQuery = "SELECT id FROM users WHERE api_key = ?";
+        $getUserIdQuery = "SELECT id FROM user WHERE api_key = ?";
         $getUserIdParams = [
             $this->requestData['apiKey']
         ];
@@ -107,12 +107,12 @@ class User
 
     public static function checkUserExists(DB $db, $apiKey): int
     {
-        $getUserIdQuery = "SELECT id FROM users WHERE api_key = ?";
+        $getUserIdQuery = "SELECT id FROM user WHERE api_key = ?";
         $getUserIdParams = [
             $apiKey
         ];
         $getUserIdResult = $db->fetchRow($getUserIdQuery, $getUserIdParams);
-        if ($getUserIdResult) {
+        if ($getUserIdResult > 0) {
             return $getUserIdResult['id'];
         }
         return 0;
@@ -130,7 +130,7 @@ class User
 
     public function activateUser(): bool
     {
-        $activateUserQuery = "UPDATE users SET status = ? WHERE id = ?";
+        $activateUserQuery = "UPDATE user SET status = ? WHERE id = ?";
         $activateUserParams = [
             'active',
             $this->userId
@@ -144,7 +144,7 @@ class User
 
     public function deactivateUser(): bool
     {
-        $activateUserQuery = "UPDATE users SET status = ? WHERE id = ?";
+        $activateUserQuery = "UPDATE user SET status = ? WHERE id = ?";
         $activateUserParams = [
             'deactivated',
             $this->userId

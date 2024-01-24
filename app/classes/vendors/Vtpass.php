@@ -39,20 +39,20 @@ class Vtpass
         return $this->getRequest($host);
     }
 
-    public function getServices(): bool|string
+    public function getServices(): array
     {
         $host = $this->sandboxApiUrl . 'service-categories';
         return $this->getRequest($host);
     }
 
-    public function getServiceOptions(): bool|string
+    public function getServiceOptions(): array
     {
         $serviceId = $this->serviceCode; // e.g data, airtime
         $host = $this->sandboxApiUrl . 'services?identifier=' . $serviceId;
         return $this->getRequest($host);
     }
 
-    public function getVariationCodes(): bool|string
+    public function getVariationCodes(): array
     {
         $serviceOptionId = $this->serviceOptionCode; // e.g gotv
         $host = $this->sandboxApiUrl . 'service-variations?serviceID=' . $serviceOptionId;
@@ -61,6 +61,7 @@ class Vtpass
 
     public function airtime(): array
     {
+        // no variation code
         $serviceOptionId = $this->serviceOptionCode; // mtn, airtel, glo, 9mobile
         $host = $this->sandboxApiUrl . 'pay';
         $requestData = [
@@ -72,13 +73,13 @@ class Vtpass
         return $this->postRequest($host, $requestData);
     }
 
-    public function data(): bool|string
+    public function data(): array
     {
         $variationId = $this->variationCode; // mtn, airtel, glo, 9mobile
         $host = $this->sandboxApiUrl . 'pay';
         $requestData = [
             "request_id" => $this->requestId,
-            "serviceID" => $this->serviceCode,
+            "serviceID" => $this->serviceOptionCode,
             "billersCode" => $this->destinationNumber,
             "variation_code" => $variationId,
             "amount" => $this->amount,
@@ -97,7 +98,7 @@ class Vtpass
         return true;
     }
 
-    public function getRequest($host)
+    public function getRequest($host): array
     {
         $headers = array(
             'Content-Type: application/json',
@@ -117,7 +118,7 @@ class Vtpass
             CURLOPT_CUSTOMREQUEST => "GET"
         );
         curl_setopt_array($curl, $curl_option_array);
-        return curl_exec($curl);
+        return json_decode(curl_exec($curl), true);
     }
 
     public function postRequest($host, $requestData)

@@ -180,16 +180,20 @@ class Utility
 //        $blocked_keywords = array_map('trim', $blocked_msg_keywords);
     }
 
+    public static function getEnv(): array
+    {
+        $envFilePath = dirname(__DIR__, 2) . '/.env';
+        return (new Utility)->parseEnvFile($envFilePath);
+    }
+
     /*****************************************
      * ***************************************
-     * compare string to an array for blocked*
-     * keywords                              *
+     * Get db connection details from env file
      * ***************************************
      *****************************************/
     private function getDbConnDetails(): void
     {
-        $envFilePath = dirname(__DIR__, 2) . '/.env'; // Adjust the path to your .env file
-//        $envVars = (new Utility)->parseEnvFile($envFilePath);
+        $envFilePath = dirname(__DIR__, 2) . '/.env';
         $envVars = $this->parseEnvFile($envFilePath);
         $this->dbDetails = $envVars;
     }
@@ -208,7 +212,7 @@ class Utility
         foreach ($lines as $line) {
             $line = trim($line);
 
-            if (empty($line) || strpos($line, '#') === 0) {
+            if (empty($line) || str_starts_with($line, '#')) {
                 continue; // Skip empty lines and comments
             }
 
@@ -226,7 +230,7 @@ class Utility
         $dbHost = $connDetails['DATABASE_HOST'];
         $dbUser = $connDetails['DATABASE_USER'];
         $dbName = $connDetails['DATABASE_NAME'];
-        $dbPassword = $connDetails['DATABASE_PASS'];;
+        $dbPassword = $connDetails['DATABASE_PASS'];
         return new DB($dbHost, $dbUser, $dbName, $dbPassword);
 
     }
