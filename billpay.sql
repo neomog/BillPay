@@ -1,5 +1,5 @@
 -- users table
-CREATE TABLE `users`(
+CREATE TABLE `user`(
                         `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                         `first_name` VARCHAR(50) NOT NULL,
                         `last_name` VARCHAR(50) NOT NULL,
@@ -20,6 +20,19 @@ CREATE TABLE `users`(
                         `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
+
+-- user_settings table
+CREATE TABLE `user_setting`(
+                              `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                              `user_id` INT(11) NOT NULL,
+                              `date_created` TIMESTAMP NOT NULL,
+                              `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                              FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `user_wallet` (`id`, `user_id`, `wallet_balance`, `date_created`, `date_updated`) VALUES ('1', '1', '0.00', NOW(), current_timestamp());
+
+
 -- recharge_transactions table
 CREATE TABLE recharge_transaction (
                                        `id` INT(11) AUTO_INCREMENT PRIMARY KEY,
@@ -38,18 +51,6 @@ CREATE TABLE recharge_transaction (
                                        `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                                        FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
-
--- user_wallet table
-CREATE TABLE `user_wallet`(
-                              `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                              `user_id` INT(11) NOT NULL,
-                              `wallet_balance` DECIMAL(11, 2) NOT NULL DEFAULT '0.00',
-                              `date_created` TIMESTAMP NOT NULL,
-                              `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-                              FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-INSERT INTO `user_wallet` (`id`, `user_id`, `wallet_balance`, `date_created`, `date_updated`) VALUES ('1', '1', '0.00', NOW(), current_timestamp());
 
 -- services table
 CREATE TABLE `service`(
