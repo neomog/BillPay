@@ -50,7 +50,7 @@ class Auth
 
 
         if(!$errorMessage) {
-            $checkUserQuery = 'SELECT * FROM users WHERE email = ? OR mobile = ?';
+            $checkUserQuery = 'SELECT * FROM user WHERE email = ? OR mobile = ?';
             $checkUserParams = [$data['email'], $data['phoneNumber']];
             $isUserExist = $this->db->fetchRow($checkUserQuery, $checkUserParams);
 
@@ -136,7 +136,7 @@ class Auth
         }
 
         if(!empty($loginId) && !empty($data['password'])) {
-            $selectUserQuery = "SELECT first_name, last_name, user_name, email, password, salt, gender, mobile, type, status, api_key, auth_token  FROM users WHERE user_name = ? OR email = ?";
+            $selectUserQuery = "SELECT first_name, last_name, user_name, email, password, salt, gender, mobile, type, status, api_key, auth_token  FROM user WHERE user_name = ? OR email = ?";
             $selectUserParams = [$loginId, $loginId];
             $isUserExist = $this->db->fetchRow($selectUserQuery, $selectUserParams);
 

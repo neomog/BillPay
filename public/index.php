@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $response = $classInstance->$callback();
                 } else {
                     // TODO: IMPLEMENT API KEY INTO HEADER INSTEAD OR REQUEST OBJECT
-                    $apiKey = filter_var($apiRequest['apiKey'] ?? '', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+                    $apiKey = filter_var(Helper::getBearerToken() ?? '', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
                     if (User::checkUserExists($dbConnection, $apiKey) > 0) {
                         $classInstance = new $callbackClass($dbConnection, $apiRequest);
