@@ -77,6 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $apiKey = filter_var(Helper::getBearerToken() ?? '', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
                     if (User::checkUserExists($dbConnection, $apiKey) > 0) {
+                        $apiRequest['apiKey'] = $apiKey;
                         $classInstance = new $callbackClass($dbConnection, $apiRequest);
                         $response = $classInstance->$callback();
                     } else {
