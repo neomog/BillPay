@@ -46,6 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'createUser' => 'UserRouter',
             'updateUser' => 'UserRouter',
             'getUserWalletBalance' => 'UserRouter',
+            'changePassword' => 'UserRouter',
+
 
             // SERVICES
             'getServices' => 'ServiceRouter',

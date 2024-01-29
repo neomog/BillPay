@@ -128,6 +128,25 @@ class UserRouter
         }
     }
 
+    public function changePassword(){
+        $User = new User($this->db, $this->requestData);
+        if($User->changePassword()) {
+            $responseData = [
+                'status' => true,
+                'server_response' => 'Success',
+                'server_message' => 'Password Changed Successfully',
+            ];
+            return Helper::jsonResponse($responseData, 200);
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => 'Password Changed Not Successfully',
+            ];
+            return Helper::jsonResponse($responseData, 400);
+        }
+    }
+
     public function __destruct()
     {
 

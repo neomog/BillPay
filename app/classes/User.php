@@ -177,4 +177,31 @@ class User
         return $this->db->executeQuery($chargeUserQuery, $chargeUserParams);
     }
 
+    public function changePassword() {
+        $data = $this->requestData;
+        if(!empty($data['oldPassword'])){
+            $typedInOldPassword = filter_var($data['oldPassword'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $typedInOldPasswordHash = hash('sha512', $typedInOldPassword);
+
+            $getOldPasswordQuery = "SELECT password, salt FROM user WHERE id = ?";
+            $getOldPasswordParams = [$this->userId];
+            $getOldPasswordResult = $this->db->fetchRow($getOldPasswordQuery, $getOldPasswordParams);
+            $oldPassword = $getOldPasswordResult['password'];
+            $dbPasswordSalt = $getOldPasswordResult['salt'];
+            $savedPassword = hash('sha512', $typedInOldPasswordHash . $dbPasswordSalt);
+
+            $newPassword = $data['newPassword'];
+            $newPasswordHash = hash('sha512', $newPassword);
+            $passwordEncrypt = hash('sha512', $newPasswordHash . $dbPasswordSalt);
+
+            if($savedPassword == $oldPassword){
+                $changePasswordQuery = "UPDATE user SET password = ?";
+                $changePasswordParams = [
+                    $passwordEncrypt
+                ];
+                return $this->db->executeQuery($changePasswordQuery, $changePasswordParams);
+            }
+        }
+    }
+
 }
