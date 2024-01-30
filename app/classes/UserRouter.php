@@ -147,6 +147,26 @@ class UserRouter
         }
     }
 
+    public function adminUpdateUser() {
+        $User = new User($this->db, $this->requestData);
+        if($User->adminUpdateUser()) {
+            $responseData = [
+                'status' => true,
+                'server_response' => 'Success',
+                'server_message' => 'User updated Successfully',
+            ];
+            return Helper::jsonResponse($responseData, 200);
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => 'User update unsuccessful',
+            ];
+            return Helper::jsonResponse($responseData, 400);
+        }
+
+    }
+
     public function __destruct()
     {
 
