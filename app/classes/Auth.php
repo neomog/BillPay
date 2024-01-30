@@ -62,7 +62,7 @@ class Auth
                 $authToken = $this->generateCode(15);
                 $apiKey = $this->generateCode(128);
                 $refId = $this->generateCode(5);
-                $insertUserQuery = "INSERT INTO users (first_name, last_name, user_name, email, password, salt, mobile, type, status, auth_token, api_key, ref_id, date_created) 
+                $insertUserQuery = "INSERT INTO user (first_name, last_name, user_name, email, password, salt, mobile, type, status, auth_token, api_key, ref_id, date_created) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())";
 
                 $insertUserParams = [

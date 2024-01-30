@@ -128,6 +128,65 @@ class UserRouter
         }
     }
 
+    public function changePassword(){
+        $User = new User($this->db, $this->requestData);
+        if($User->changePassword()) {
+            $responseData = [
+                'status' => true,
+                'server_response' => 'Success',
+                'server_message' => 'Password Changed Successfully',
+            ];
+            return Helper::jsonResponse($responseData, 200);
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => 'Password Changed Not Successfully',
+            ];
+            return Helper::jsonResponse($responseData, 400);
+        }
+    }
+
+    public function adminUpdateUser() {
+        $User = new User($this->db, $this->requestData);
+        if($User->adminUpdateUser()) {
+            $responseData = [
+                'status' => true,
+                'server_response' => 'Success',
+                'server_message' => 'User updated Successfully',
+            ];
+            return Helper::jsonResponse($responseData, 200);
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => 'User update unsuccessful',
+            ];
+            return Helper::jsonResponse($responseData, 400);
+        }
+
+    }
+
+    public function adminCreateUser(){
+        $User = new User($this->db, $this->requestData);
+        if($User->createUser()){
+            $message = "Registration successful.";
+            $responseData = [
+                'status' => true,
+                'server_response' => 'Success',
+                'server_message' => $message
+            ];
+            return Helper::jsonResponse($responseData);
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => 'Unable to register user'
+            ];
+            return Helper::jsonResponse($responseData, 400);
+        }
+    }
+
     public function __destruct()
     {
 
