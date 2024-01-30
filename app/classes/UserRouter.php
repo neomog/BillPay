@@ -167,6 +167,26 @@ class UserRouter
 
     }
 
+    public function adminCreateUser(){
+        $User = new User($this->db, $this->requestData);
+        if($User->createUser()){
+            $message = "Registration successful.";
+            $responseData = [
+                'status' => true,
+                'server_response' => 'Success',
+                'server_message' => $message
+            ];
+            return Helper::jsonResponse($responseData);
+        } else {
+            $responseData = [
+                'status' => false,
+                'server_response' => 'Failed',
+                'server_message' => 'Unable to register user'
+            ];
+            return Helper::jsonResponse($responseData, 400);
+        }
+    }
+
     public function __destruct()
     {
 
