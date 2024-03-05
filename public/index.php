@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+//error_Reporting(E_ERROR | E_NOTICE);
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
