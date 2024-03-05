@@ -4,7 +4,7 @@ namespace App\classes;
 
 class Logger
 {
-    protected $logFilePath;
+    protected string $logFilePath;
 
     public function __construct(string $logDirectory = 'logs')
     {
@@ -45,7 +45,18 @@ class Logger
         }
 
         $filePath = $directoryName . $filename . ".txt";
-        file_put_contents($filePath, $txt_data . "\r\n", FILE_APPEND);
+
+        // Prepend log entry with timestamp
+        $timestamp = date('Y-m-d H:i:s');
+        $logEntry = "[$timestamp] $txt_data";
+        // echo $logEntry . PHP_EOL; // Output to console for demonstration
+        // file_put_contents($filePath, $logEntry . "\r\n", FILE_APPEND);
+
+        // Append divider to log entry
+        $divider = str_repeat('=', 50);
+        $logEntry .= PHP_EOL . $divider . PHP_EOL;
+
+        file_put_contents($filePath, $logEntry . PHP_EOL, FILE_APPEND);
     }
 
 }

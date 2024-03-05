@@ -12,7 +12,10 @@ require ROOT . '/vendor/autoload.php';
 use App\classes\User;
 use App\classes\Helper;
 use App\classes\Utility;
-use App\classes\Logger;
+use App\classes\ErrorHandler;
+
+set_error_handler(array(ErrorHandler::class, 'handleError'));
+set_exception_handler(array(ErrorHandler::class, 'handleException'));
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $env = Utility::getEnv();
@@ -101,8 +104,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     } catch (Exception|Error $e) {
-        Logger::log('api', $e->getMessage());
-        Logger::log('api', $e->getTraceAsString());
         if (DEBUG == 'true') {
             echo "<pre> \n";
             echo "=========================== \n";

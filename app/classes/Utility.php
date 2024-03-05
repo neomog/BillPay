@@ -235,4 +235,45 @@ class Utility
 
     }
 
+    public static function handleUpload($requestFile): string
+    {
+        $arr_file_types = ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'];
+
+        if (!(in_array($requestFile['file']['type'], $arr_file_types))) {
+            echo "error";
+            die;
+        }
+
+        if (!file_exists('uploads')) {
+            mkdir('uploads', 0777);
+        }
+
+        $filename = time().'_'.$requestFile['file']['name'];
+
+        move_uploaded_file($requestFile['file']['tmp_name'], 'uploads/'.$filename);
+
+        return 'uploads/'.$filename;
+
+    }
+
+    public static function fileDownloadHeader($fileType, $fileName): void
+    {
+        switch ($fileType) {
+            case 'csv':
+                $type = 'text-csv';
+                break;
+            case 'xls':
+                $type = 'vnd.ms-excel';
+                break;
+            default:
+                throw new Exception("Unsupported file type: $fileType");
+        }
+
+
+        header('Content-Type: application/' . $type);
+        header('Content-Disposition: attachment;filename='. $fileName);
+        header('Cache-Control: max-age=0');
+
+    }
+
 }

@@ -37,7 +37,7 @@ class DB
                 [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
             );
         } catch (PDOException $e) {
-            echo $e->getMessage();
+//            echo $e->getMessage();
         }
     }
 
@@ -52,8 +52,8 @@ class DB
             $stmt->execute($params);
             return true;
         } catch (PDOException $e) {
-            echo $e->getMessage();
-            return false;
+//            echo $e->getMessage();
+//            return false;
         }
     }
 
@@ -68,8 +68,8 @@ class DB
             $stmt->execute($params);
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            echo $e->getMessage();
-            return null;
+//            echo $e->getMessage();
+//            return null;
         }
     }
 
@@ -84,8 +84,8 @@ class DB
             $stmt->execute($params);
             return $stmt->fetch(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            echo $e->getMessage();
-            return null;
+//            echo $e->getMessage();
+//            return null;
         }
     }
 
@@ -98,8 +98,8 @@ class DB
         try {
             return (int) $this->conn->lastInsertId();
         } catch (PDOException $e) {
-            echo $e->getMessage();
-            return null;
+//            echo $e->getMessage();
+//            return null;
         }
     }
 
