@@ -9,38 +9,37 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
       - ./:/billpay
-#  php service container
+
   php:
-#    image: php:fpm
     build:
       context: .
       dockerfile: PHP.Dockerfile
     volumes:
       - ./:/billpay
-# mysql service container
+
   mysql:
     image: mariadb:latest
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 'password'
-      MYSQL_USER: 'user'
-      MYSQL_PASSWORD: 'pasword'
+      MYSQL_ROOT_PASSWORD: 'rootpassword'
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'rootpassword'
       MYSQL_DATABASE: 'billpay'
     volumes:
       - ./mysqldata:/var/lib/mysql
-#  to store mysqldata in local directory, uncomment below and comment out above volume section
 #    volumes:
 #      - ./data/db:/var/lib/mysql
     ports:
       - '3306:3306'
-# phpmyadmin service container
+
   phpmyadmin:
     image: phpmyadmin
     restart: always
     ports:
-      - '8080:8080'
+      - 8080:80
     environment:
       - PMA_ARBITRARY=1
+      - UPLOAD_LIMIT=300M
 # alternatively to set up adminer refer to below
 #  db-admin:
 #    image: adminer:latest
