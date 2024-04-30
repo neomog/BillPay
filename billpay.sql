@@ -94,7 +94,7 @@ CREATE TABLE `service_option`(
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- services option codes table
-CREATE TABLE `service_option_codes`(
+CREATE TABLE `service_option_code`(
                                        `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                                        `service_option_id` INT(11) NOT NULL,
                                        FOREIGN KEY (service_option_id) REFERENCES service_option(id),
