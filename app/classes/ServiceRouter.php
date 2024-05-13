@@ -3,7 +3,16 @@
 namespace App\classes;
 
 use App\classes\serviceControl\Service;
+use App\classes\serviceControl\ServiceOption;
+use App\classes\serviceControl\ServiceOptionCode;
 
+/**
+ * author: ohiare nathaniel
+ * This class controls the platform rendered
+ * services, including adding a new service
+ * adding a service option, adding a service
+ * option code
+ */
 class ServiceRouter
 {
 
@@ -66,48 +75,48 @@ class ServiceRouter
 
     public function getServiceOptions(): string
     {
-        $serviceObject = new Service($this->db);
+        $serviceOptionObject = new ServiceOption($this->db);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->getServices()
+            'data' => $serviceOptionObject->getServices()
         ];
         return Helper::jsonResponse($responseData);
     }
 
     public function addServiceOption(): string
     {
-        $serviceObject = new Service($this->db, $this->requestData);
+        $serviceOptionObject = new ServiceOption($this->db, $this->requestData);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->addService()
+            'data' => $serviceOptionObject->addService()
         ];
         return Helper::jsonResponse($responseData);
     }
 
     public function updateServiceOption(): string
     {
-        $serviceObject = new Service($this->db, $this->requestData);
+        $serviceOptionObject = new ServiceOption($this->db, $this->requestData);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->updateService()
+            'data' => $serviceOptionObject->updateService()
         ];
         return Helper::jsonResponse($responseData);
     }
 
     public function deleteServiceOption(): string
     {
-        $serviceObject = new Service($this->db, $this->requestData);
+        $serviceOptionObject = new ServiceOption($this->db, $this->requestData);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->deleteService()
+            'data' => $serviceOptionObject->deleteService()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -116,48 +125,48 @@ class ServiceRouter
 
     public function getServiceOptionCodes(): string
     {
-        $serviceObject = new Service($this->db);
+        $serviceOptionCodeObject = new ServiceOptionCode($this->db);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->getServices()
+            'data' => $serviceOptionCodeObject->getServices()
         ];
         return Helper::jsonResponse($responseData);
     }
 
     public function addServiceOptionCode(): string
     {
-        $serviceObject = new Service($this->db, $this->requestData);
+        $serviceOptionCodeObject = new ServiceOptionCode($this->db, $this->requestData);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->addService()
+            'data' => $serviceOptionCodeObject->addService()
         ];
         return Helper::jsonResponse($responseData);
     }
 
     public function updateServiceOptionCode(): string
     {
-        $serviceObject = new Service($this->db, $this->requestData);
+        $serviceOptionCodeObject = new ServiceOptionCode($this->db, $this->requestData);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->updateService()
+            'data' => $serviceOptionCodeObject->updateService()
         ];
         return Helper::jsonResponse($responseData);
     }
 
     public function deleteServiceOptionCode(): string
     {
-        $serviceObject = new Service($this->db, $this->requestData);
+        $serviceOptionCodeObject = new ServiceOptionCode($this->db, $this->requestData);
         $responseData = [
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceObject->deleteService()
+            'data' => $serviceOptionCodeObject->deleteService()
         ];
         return Helper::jsonResponse($responseData);
     }
