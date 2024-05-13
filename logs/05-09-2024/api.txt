@@ -1,0 +1,4663 @@
+[2024-05-09 09:29:30] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:29:30] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:30] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:29:30] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:30] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:29:30] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:30] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:29:30] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:30] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:29:30] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:30] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:29:30] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:30] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:29:30] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:47] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:29:47] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:47] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:29:47] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:47] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:29:47] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:47] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:29:47] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:47] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:29:47] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:47] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:29:47] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:29:47] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:29:47] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:04] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:04] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:04] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:30:04] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:04] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:04] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:04] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:30:04] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:04] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:30:04] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:04] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:30:04] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:04] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:30:04] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:33] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:33] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:33] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:30:33] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:33] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:33] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:33] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:30:33] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:33] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:30:33] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:33] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:30:33] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:33] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:30:33] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:43] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:43] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:30:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:43] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:43] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:30:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:43] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:30:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:43] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:30:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:43] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:30:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:56] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:56] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:56] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:30:56] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:56] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:30:56] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:56] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:30:56] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:56] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:30:56] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:56] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:30:56] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:30:56] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:30:56] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:31:49] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:31:49] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:31:49] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:31:49] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:31:57] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:31:57] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:31:57] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:31:57] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:33:01] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:33:01] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:33:01] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:33:01] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:17] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:34:17] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:17] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:34:17] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:17] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:34:17] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:17] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:34:17] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:17] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:34:17] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:17] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:34:17] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:17] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:34:17] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:31] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:34:31] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:31] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:34:31] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:31] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:34:31] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:31] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:34:31] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:31] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:34:31] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:31] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:34:31] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:31] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:34:31] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:50] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:34:50] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:34:50] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:34:50] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:35:48] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:35:48] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:35:48] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:35:48] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:12] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:36:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:12] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:36:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:12] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:36:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:12] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:36:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:12] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:36:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:12] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:36:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:12] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:36:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:44] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:36:44] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 186,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 22,
+    'function' => 'getEnv',
+    'class' => 'App\\classes\\Utility',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:44] Error (level 2): Undefined array key "DEBUG" in /billpay/public/index.php on line 23
+==================================================
+
+[2024-05-09 09:36:45] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 23,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DEBUG"',
+      2 => '/billpay/public/index.php',
+      3 => 23,
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:45] Error (level 2): file_get_contents(/billpay/.env): Failed to open stream: No such file or directory in /billpay/app/classes/Utility.php on line 203
+==================================================
+
+[2024-05-09 09:36:45] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'file_get_contents(/billpay/.env): Failed to open stream: No such file or directory',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 203,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 203,
+    'function' => 'file_get_contents',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 197,
+    'function' => 'parseEnvFile',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+      0 => '/billpay/.env',
+    ),
+  ),
+  4 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 228,
+    'function' => 'getDbConnDetails',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  5 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:45] Error (level 2): Undefined array key "DATABASE_HOST" in /billpay/app/classes/Utility.php on line 230
+==================================================
+
+[2024-05-09 09:36:45] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 230,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_HOST"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 230,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:45] Error (level 2): Undefined array key "DATABASE_USER" in /billpay/app/classes/Utility.php on line 231
+==================================================
+
+[2024-05-09 09:36:45] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 231,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_USER"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 231,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:45] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:36:45] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:36:45] Error (level 2): Undefined array key "DATABASE_PASS" in /billpay/app/classes/Utility.php on line 233
+==================================================
+
+[2024-05-09 09:36:45] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 233,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_PASS"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 233,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:38:12] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:38:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+        'API_KEY' => 'your-api-key',
+        'DATABASE_HOST' => 'localhost',
+        'DATABASE_USER' => 'username',
+        'DATABASE_PASS' => 'password',
+        'DEBUG' => 'false',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:38:42] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:38:42] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+        'API_KEY' => 'your-api-key',
+        'DATABASE_HOST' => 'localhost',
+        'DATABASE_USER' => 'username',
+        'DATABASE_PASS' => 'password',
+        'DEBUG' => 'false',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:39:21] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:39:21] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+        'API_KEY' => 'your-api-key',
+        'DATABASE_HOST' => 'localhost',
+        'DATABASE_USER' => 'username',
+        'DATABASE_PASS' => 'password',
+        'DEBUG' => 'true',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 09:43:29] Error (level 2): Undefined array key "DATABASE_NAME" in /billpay/app/classes/Utility.php on line 232
+==================================================
+
+[2024-05-09 09:43:29] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/Utility.php',
+    'line' => 232,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "DATABASE_NAME"',
+      2 => '/billpay/app/classes/Utility.php',
+      3 => 232,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 33,
+    'function' => 'getConnection',
+    'class' => 'App\\classes\\Utility',
+    'object' => 
+    \App\classes\Utility::__set_state(array(
+       'dbDetails' => 
+      array (
+        'API_KEY' => 'your-api-key',
+        'DATABASE_HOST' => 'mysql',
+        'DATABASE_USER' => 'root',
+        'DATABASE_PASS' => 'rootpasswors',
+        'DEBUG' => 'true',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 10:26:58] Error (level 2): Undefined array key "identifier" in /billpay/app/classes/serviceControl/Service.php on line 59
+==================================================
+
+[2024-05-09 10:26:58] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/Service.php',
+    'line' => 59,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "identifier"',
+      2 => '/billpay/app/classes/serviceControl/Service.php',
+      3 => 59,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/ServiceRouter.php',
+    'line' => 48,
+    'function' => 'updateService',
+    'class' => 'App\\classes\\serviceControl\\Service',
+    'object' => 
+    \App\classes\serviceControl\Service::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateService',
+        'name' => 'name',
+        'code' => 'code',
+        'description' => 'description',
+        'status' => 'true',
+        'image' => '',
+        'api' => '',
+        'apiKey' => 'GLLrv72DocVKggApnSDlEPX4iuPPezfgXfeU0shbBjxHIqnHNcdE4up6J1RfQt7gzI71C8T1IwcB0ujGZpGNhRbGp4j40IMBvG9pMWuCvl8q8KrDg0NeuFmIoadyc8t5',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 95,
+    'function' => 'updateService',
+    'class' => 'App\\classes\\ServiceRouter',
+    'object' => 
+    \App\classes\ServiceRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateService',
+        'name' => 'name',
+        'code' => 'code',
+        'description' => 'description',
+        'status' => 'true',
+        'image' => '',
+        'api' => '',
+        'apiKey' => 'GLLrv72DocVKggApnSDlEPX4iuPPezfgXfeU0shbBjxHIqnHNcdE4up6J1RfQt7gzI71C8T1IwcB0ujGZpGNhRbGp4j40IMBvG9pMWuCvl8q8KrDg0NeuFmIoadyc8t5',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
