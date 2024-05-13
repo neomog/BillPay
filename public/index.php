@@ -68,8 +68,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'getVendors' => 'VendorRouter',
             'addVendor' => 'VendorRouter',
             'updateVendor' => 'VendorRouter',
-            'deleteVendor' => 'VendorRouter'
+            'deleteVendor' => 'VendorRouter',
 
+            // PLATFORM CORE SERVICES
+//           'getServices' => 'ServiceRouter',
+           'addService' => 'ServiceRouter',
+           'updateService' => 'ServiceRouter',
+           'deleteService' => 'ServiceRouter',
+//           'getServiceOptions' => 'ServiceRouter',
+           'addServiceOption' => 'ServiceRouter',
+           'updateServiceOption' => 'ServiceRouter',
+           'deleteServiceOption' => 'ServiceRouter',
+           'getServiceOptionCodes' => 'ServiceRouter',
+           'addServiceOptionCode' => 'ServiceRouter',
+           'updateServiceOptionCode' => 'ServiceRouter',
+           'deleteServiceOptionCode' => 'ServiceRouter'
             // Add more endpoints here as needed
         ];
         // TODO: generate request id
