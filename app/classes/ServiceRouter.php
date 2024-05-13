@@ -80,7 +80,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionObject->getServices()
+            'data' => $serviceOptionObject->getServiceOptions()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -92,7 +92,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionObject->addService()
+            'data' => $serviceOptionObject->addServiceOption()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -104,7 +104,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionObject->updateService()
+            'data' => $serviceOptionObject->updateServiceOption()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -116,7 +116,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionObject->deleteService()
+            'data' => $serviceOptionObject->deleteServiceOption()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -130,7 +130,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionCodeObject->getServices()
+            'data' => $serviceOptionCodeObject->getServiceOptionCodes()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -142,7 +142,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionCodeObject->addService()
+            'data' => $serviceOptionCodeObject->addServiceOptionCode()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -154,7 +154,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionCodeObject->updateService()
+            'data' => $serviceOptionCodeObject->updateServiceOptionCode()
         ];
         return Helper::jsonResponse($responseData);
     }
@@ -166,7 +166,7 @@ class ServiceRouter
             'status' => true,
             'server_response' => 'Success',
             'server_message' => "Action completed successfully",
-            'data' => $serviceOptionCodeObject->deleteService()
+            'data' => $serviceOptionCodeObject->deleteServiceOptionCode()
         ];
         return Helper::jsonResponse($responseData);
     }
