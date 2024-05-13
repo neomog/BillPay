@@ -113,6 +113,7 @@ CREATE TABLE `vendor`(
                          `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                          `vendor_name` VARCHAR(50) NOT NULL UNIQUE,
                          `vendor_code` VARCHAR(50) NOT NULL UNIQUE,
+                         `requirement` VARCHAR(255) NULL,
                          `status` ENUM('true', 'false') NOT NULL,
                          `description` TEXT,
                          `image` VARCHAR(50) NULL,

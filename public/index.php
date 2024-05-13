@@ -62,7 +62,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'airtime' => 'ServiceRouter',
             'data' => 'ServiceRouter',
             'education' => 'ServiceRouter',
-            'electricity' => 'ServiceRouter'
+            'electricity' => 'ServiceRouter',
+
+            //VENDOR
+            'getVendors' => 'VendorRouter',
+            'addVendor' => 'VendorRouter',
+            'updateVendor' => 'VendorRouter',
+            'deleteVendor' => 'VendorRouter'
 
             // Add more endpoints here as needed
         ];

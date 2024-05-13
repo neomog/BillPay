@@ -1,0 +1,4185 @@
+[2024-05-09 22:21:23] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:21:23] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:21:23] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:21:23] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:24:42] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:24:42] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:24:42] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:24:42] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:28:14] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:28:14] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:28:14] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:28:14] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:30:55] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:30:55] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:30:55] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:30:55] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'requirement' => 'apiKey',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:31:28] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 28
+==================================================
+
+[2024-05-09 22:31:28] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 28,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 28,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:31:28] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:31:28] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:31:28] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:31:28] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:31:43] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 28
+==================================================
+
+[2024-05-09 22:31:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 28,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 28,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:31:43] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:31:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:31:43] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:31:43] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'active',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:32:09] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 28
+==================================================
+
+[2024-05-09 22:32:09] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 28,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 28,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:32:09] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:32:09] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:32:09] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:32:09] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'Flutterwave',
+        'vendorCode' => 'flutterwave_go_rave',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:35:18] Error (level 2): Undefined array key "vendorCode" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 46
+==================================================
+
+[2024-05-09 22:35:18] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 46,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "vendorCode"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 46,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:35:18] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 47
+==================================================
+
+[2024-05-09 22:35:18] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 47,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 47,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:35:18] Error (level 2): Undefined array key "status" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 48
+==================================================
+
+[2024-05-09 22:35:18] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 48,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "status"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 48,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:35:19] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 50
+==================================================
+
+[2024-05-09 22:35:19] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 50,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 50,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:35:19] Error (level 2): Undefined array key "identifier" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 51
+==================================================
+
+[2024-05-09 22:35:19] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 51,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "identifier"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 51,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:36:39] Error (level 2): Undefined array key "vendorCode" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 46
+==================================================
+
+[2024-05-09 22:36:39] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 46,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "vendorCode"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 46,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:36:39] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 47
+==================================================
+
+[2024-05-09 22:36:39] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 47,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 47,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:36:39] Error (level 2): Undefined array key "status" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 48
+==================================================
+
+[2024-05-09 22:36:39] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 48,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "status"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 48,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:36:39] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 50
+==================================================
+
+[2024-05-09 22:36:39] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 50,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 50,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '!',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:01] Error (level 2): Undefined array key "vendorCode" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 46
+==================================================
+
+[2024-05-09 22:37:01] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 46,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "vendorCode"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 46,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:01] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 47
+==================================================
+
+[2024-05-09 22:37:01] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 47,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 47,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:01] Error (level 2): Undefined array key "status" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 48
+==================================================
+
+[2024-05-09 22:37:01] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 48,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "status"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 48,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:01] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 50
+==================================================
+
+[2024-05-09 22:37:01] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 50,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 50,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => '1',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:12] Error (level 2): Undefined array key "vendorCode" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 46
+==================================================
+
+[2024-05-09 22:37:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 46,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "vendorCode"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 46,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:12] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 47
+==================================================
+
+[2024-05-09 22:37:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 47,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 47,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:12] Error (level 2): Undefined array key "status" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 48
+==================================================
+
+[2024-05-09 22:37:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 48,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "status"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 48,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:12] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 50
+==================================================
+
+[2024-05-09 22:37:12] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 50,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 50,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:44] Error (level 2): Undefined array key "vendorCode" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 46
+==================================================
+
+[2024-05-09 22:37:44] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 46,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "vendorCode"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 46,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:44] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 47
+==================================================
+
+[2024-05-09 22:37:44] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 47,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 47,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:44] Error (level 2): Undefined array key "status" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 48
+==================================================
+
+[2024-05-09 22:37:44] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 48,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "status"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 48,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:37:44] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 50
+==================================================
+
+[2024-05-09 22:37:44] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 50,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 50,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:38:36] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 47
+==================================================
+
+[2024-05-09 22:38:36] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 47,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 47,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'vendorCode' => 'flutterwave_go',
+        'status' => 'true',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'vendorCode' => 'flutterwave_go',
+        'status' => 'true',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:38:36] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 50
+==================================================
+
+[2024-05-09 22:38:36] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 50,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 50,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 39,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'vendorCode' => 'flutterwave_go',
+        'status' => 'true',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'updateVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'updateVendor',
+        'vendorName' => 'Flutterwave Rave Payment',
+        'vendorCode' => 'flutterwave_go',
+        'status' => 'true',
+        'description' => 'Best way to pay',
+        'identifier' => 1,
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:39:39] Error (level 2): Undefined array key "requirement" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 28
+==================================================
+
+[2024-05-09 22:39:39] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 28,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "requirement"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 28,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'PaySTack',
+        'vendorCode' => 'paystack',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'PaySTack',
+        'vendorCode' => 'paystack',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:39:39] Error (level 2): Undefined array key "description" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 30
+==================================================
+
+[2024-05-09 22:39:39] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 30,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "description"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 30,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'PaySTack',
+        'vendorCode' => 'paystack',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'PaySTack',
+        'vendorCode' => 'paystack',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
+[2024-05-09 22:39:39] Error (level 2): Undefined array key "image" in /billpay/app/classes/serviceControl/vendor/Vendor.php on line 31
+==================================================
+
+[2024-05-09 22:39:39] array (
+  0 => 
+  array (
+    'file' => '/billpay/app/classes/ErrorHandler.php',
+    'line' => 11,
+    'function' => 'getBacktraceAsString',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'file' => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+    'line' => 31,
+    'function' => 'handleError',
+    'class' => 'App\\classes\\ErrorHandler',
+    'type' => '::',
+    'args' => 
+    array (
+      0 => 2,
+      1 => 'Undefined array key "image"',
+      2 => '/billpay/app/classes/serviceControl/vendor/Vendor.php',
+      3 => 31,
+    ),
+  ),
+  2 => 
+  array (
+    'file' => '/billpay/app/classes/VendorRouter.php',
+    'line' => 28,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\serviceControl\\vendor\\Vendor',
+    'object' => 
+    \App\classes\serviceControl\vendor\Vendor::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'PaySTack',
+        'vendorCode' => 'paystack',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+  3 => 
+  array (
+    'file' => '/billpay/public/index.php',
+    'line' => 94,
+    'function' => 'addVendor',
+    'class' => 'App\\classes\\VendorRouter',
+    'object' => 
+    \App\classes\VendorRouter::__set_state(array(
+       'db' => 
+      \App\classes\DB::__set_state(array(
+         'hostName' => 'mysql',
+         'userName' => 'root',
+         'password' => 'rootpassword',
+         'dbName' => 'billpay',
+         'conn' => 
+        \PDO::__set_state(array(
+        )),
+      )),
+       'requestData' => 
+      array (
+        'process' => 'addVendor',
+        'vendorName' => 'PaySTack',
+        'vendorCode' => 'paystack',
+        'status' => 'true',
+        'apiKey' => '44os9j1xtQomhd6c9byxmSsWQBMO3tytL7xJ6S3gdg9u282AIsL5ZdVbojXGantOB5WlN9f1hCxAmHzvnofAbJw8b9agRAD8WUhLJ9VkbjezDinfU4cScIkKI89BUQmr',
+      ),
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+==================================================
+
