@@ -1,0 +1,12 @@
+Call to undefined function App\classes\getAuthorizationHeader()
+#0 /billpay/public/index.php(77): App\classes\Helper::getBearerToken()
+#1 {main}
+Call to undefined function App\classes\getAuthorizationHeader()
+#0 /billpay/public/index.php(77): App\classes\Helper::getBearerToken()
+#1 {main}
+Using $this when not in object context
+#0 /billpay/public/index.php(77): App\classes\Helper::getBearerToken()
+#1 {main}
+Non-static method App\classes\Helper::getAuthorizationHeader() cannot be called statically
+#0 /billpay/public/index.php(77): App\classes\Helper::getBearerToken()
+#1 {main}

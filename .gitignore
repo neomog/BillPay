@@ -7,3 +7,4 @@ ghy.php
 phpunit.xml
 /tests/
 /.idea/
+/logs/

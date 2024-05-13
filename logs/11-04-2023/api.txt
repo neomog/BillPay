@@ -1,0 +1,64 @@
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(77): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(77): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(79): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::getRequest(): Return value must be of type array, null returned
+#0 /billpay/app/classes/vendors/Vtpass.php(59): App\classes\vendors\Vtpass->getRequest('https://sandbox...')
+#1 /billpay/app/classes/ServiceRouter.php(101): App\classes\vendors\Vtpass->getVariationCodes()
+#2 /billpay/public/index.php(78): App\classes\ServiceRouter->getVariationCodes()
+#3 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+App\classes\vendors\Vtpass::airtime(): Return value must be of type array, null returned
+#0 /billpay/app/classes/ServiceRouter.php(111): App\classes\vendors\Vtpass->airtime()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->airtime()
+#2 {main}
+json_decode(): Argument #1 ($json) must be of type string, array given
+#0 /billpay/app/classes/ServiceRouter.php(150): json_decode(Array, true)
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->data()
+#2 {main}
+App\classes\ServiceRouter::data(): Return value must be of type string, none returned
+#0 /billpay/public/index.php(78): App\classes\ServiceRouter->data()
+#1 {main}
+App\classes\vendors\Vtpass::data(): Return value must be of type string|bool, array returned
+#0 /billpay/app/classes/ServiceRouter.php(152): App\classes\vendors\Vtpass->data()
+#1 /billpay/public/index.php(78): App\classes\ServiceRouter->data()
+#2 {main}
