@@ -1,5 +1,5 @@
 /vendor/
-#/mysqldata/
+/mysqldata/
 /.gitignore
 .phpunit.result.cache
 ghy.php
@@ -7,3 +7,4 @@ ghy.php
 phpunit.xml
 /tests/
 /.idea/
+/logs/
