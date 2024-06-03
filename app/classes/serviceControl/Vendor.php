@@ -1,15 +1,24 @@
 <?php
 
-namespace App\classes\serviceControl\vendor;
+namespace App\classes\serviceControl;
 
 use App\classes\DB;
+
+/**
+ * Vendor
+ *
+ *
+ * @package Model
+ * @author     OHIARE NATHANIEL <ohiarenathaniel@gmail.com>
+ */
 class Vendor {
 
     public function __construct(private DB $db, private array $requestData = []) {
 
     }
 
-    public function getVendors() {
+    public function getVendors(): array
+    {
         $getVendorsQuery = "SELECT * FROM `vendor`";
         $getVendorsParams = [];
         $getVendorsResult = $this->db->fetchAll($getVendorsQuery, $getVendorsParams);
@@ -20,7 +29,8 @@ class Vendor {
         return [];
     }
 
-    public function addVendor() {
+    public function addVendor(): bool
+    {
         $addVendorQuery = "INSERT INTO `vendor` (`vendor_name`, `vendor_code`, `requirement`, `status`, `description`, `image`, `date_created`) VALUES (?, ?, ?, ?, ?, ?, NOW())";
         $addVendorParams = [
             $this->requestData['vendorName'],
@@ -39,7 +49,8 @@ class Vendor {
         return false;
     }
 
-    public function updateVendor() {
+    public function updateVendor(): bool
+    {
         $updateVendorQuery = "UPDATE `vendor` SET `vendor_name` = ?, `vendor_code` = ?, `requirement` = ?, `status` = ?, `description` = ?, `image` = ?, `date_updated` = NOW() WHERE `id` = ?";
         $updateVendorParams = [
             $this->requestData['vendorName'],
@@ -59,7 +70,8 @@ class Vendor {
         return false;
     }
 
-    public function deleteVendor() {
+    public function deleteVendor(): bool
+    {
         $deleteVendorQuery = "DELETE FROM `vendor` WHERE `id` = ?";
         $deleteVendorParams = [
             $this->requestData['identifier']
@@ -71,6 +83,34 @@ class Vendor {
             return true;
         }
         return false;
+    }
+
+    /**
+     *
+     * Adds or update vendor code
+     *
+     * @return boolean
+     */
+    public function addUpdateVendorCode(): bool
+    {
+        $identifier = $this->requestData['identifier'] ?? 0;
+        if ($identifier > 0) {
+            $updateVendorQuery = "UPDATE `vendor` SET `vendor_code_mapping` = ? WHERE `id` = ?";
+            $updateVendorParams = [
+                json_encode($this->requestData['vendorCodeMapping']),
+                $this->requestData['identifier']
+            ];
+
+            $updateVendorResult = $this->db->executeQuery($updateVendorQuery, $updateVendorParams);
+
+            if ($updateVendorResult) {
+                return true;
+            }
+            return false;
+        }
+
+        return false;
+
     }
 
 }
