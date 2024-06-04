@@ -2,7 +2,7 @@
 
 namespace App\classes;
 
-use App\classes\serviceControl\Vendor;
+use App\classes\model\Vendor;
 
 /**
  * Vendor

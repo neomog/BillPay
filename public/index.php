@@ -86,6 +86,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
            'addServiceOptionCode' => 'ServiceRouter',
            'updateServiceOptionCode' => 'ServiceRouter',
            'deleteServiceOptionCode' => 'ServiceRouter',
+
+            // PLATFORM SETTINGS
+            'getPlatformSettings' => 'PlatformRouter',
+            'addUpdatePlatformSettings' => 'PlatformRouter',
+            'deletePlatformSettings' => 'PlatformRouter',
+
             // Add more endpoints here as needed
         ];
         // TODO: generate request id
