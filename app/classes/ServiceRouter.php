@@ -2,9 +2,9 @@
 
 namespace App\classes;
 
-use App\classes\serviceControl\Service;
-use App\classes\serviceControl\ServiceOption;
-use App\classes\serviceControl\ServiceOptionCode;
+use App\classes\model\Service;
+use App\classes\model\ServiceOption;
+use App\classes\model\ServiceOptionCode;
 
 /**
  * author: ohiare nathaniel

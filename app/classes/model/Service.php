@@ -1,6 +1,6 @@
 <?php
 
-namespace App\classes\serviceControl;
+namespace App\classes\model;
 
 use App\classes\DB;
 
