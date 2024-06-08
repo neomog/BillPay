@@ -29,6 +29,7 @@ CREATE TABLE `user_wallet`(
                               `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                               `user_id` INT(11) NOT NULL,
                               `wallet_balance` DECIMAL(11, 2) NOT NULL DEFAULT '0.00',
+                              `cashback_balance` DECIMAL(11, 2) NOT NULL DEFAULT '0.00',
                               `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
                               `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                               FOREIGN KEY (`user_id`) REFERENCES `user`(`id`)
@@ -45,21 +46,38 @@ CREATE TABLE `user_setting`(
 
 -- INSERT INTO `user_wallet` (`id`, `user_id`, `wallet_balance`, `date_created`, `date_updated`) VALUES ('1', '1', '0.00', NOW(), current_timestamp());
 
-
--- recharge_transactions table
+-- recharge_transaction table
 CREATE TABLE recharge_transaction (
                                       `id` INT(11) AUTO_INCREMENT PRIMARY KEY,
                                       `user_id` INT(11) NOT NULL,
                                       FOREIGN KEY (user_id) REFERENCES user(id),
                                       `vendor` VARCHAR(100) NOT NULL,
-                                      `request_id` VARCHAR(50) NOT NULL,
-                                      `transaction_id` VARCHAR(50),
-                                      `vendor_response` TEXT,
+                                      `r_request_id` VARCHAR(50) NOT NULL,
+                                      `r_transaction_id` VARCHAR(50),
                                       `status` ENUM('pending', 'success', 'failure') NOT NULL,
                                       `phone_number` VARCHAR(20),
-                                      `transaction_amount` DECIMAL(10, 2) NOT NULL,
-                                      `transaction_type` ENUM('airtime', 'data', 'electricity'),
-                                      `payment_method` ENUM('credit_card', 'bank_transfer', 'wallet', 'cash'),
+                                      `r_transaction_amount` DECIMAL(10, 2) NOT NULL,
+                                      `r_transaction_type` ENUM('airtime', 'data', 'electricity'),
+                                      `r_payment_method` ENUM('credit_card', 'bank_transfer', 'wallet', 'cash'),
+                                      `vendor_response` TEXT,
+                                      `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+                                      `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                                      FOREIGN KEY (`user_id`) REFERENCES `user`(`id`) ON DELETE CASCADE
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
+
+-- wallet_transaction table
+CREATE TABLE wallet_transaction (
+                                      `id` INT(11) AUTO_INCREMENT PRIMARY KEY,
+                                      `user_id` INT(11) NOT NULL,
+                                      FOREIGN KEY (user_id) REFERENCES user(id),
+                                      `payment_gateway` VARCHAR(100) NOT NULL,
+                                      `w_request_id` VARCHAR(50) NOT NULL,
+                                      `w_transaction_id` VARCHAR(50),
+                                      `status` ENUM('pending', 'success', 'failure') NOT NULL,
+                                      `w_transaction_amount` DECIMAL(10, 2) NOT NULL,
+                                      `w_transaction_type` ENUM('credit', 'debit'),
+                                      `w_payment_method` ENUM('card', 'transfer', 'manual', 'deposit', 'bonus', 'cashback'),
+                                      `gateway_response` TEXT,
                                       `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
                                       `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                                       FOREIGN KEY (`user_id`) REFERENCES `user`(`id`) ON DELETE CASCADE
