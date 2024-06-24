@@ -52,8 +52,8 @@ class DB
             $stmt->execute($params);
             return true;
         } catch (PDOException $e) {
-//            echo $e->getMessage();
-//            return false;
+            echo $e->getMessage();
+            return false;
         }
     }
 
