@@ -7,8 +7,9 @@ use App\classes\model\ServiceOption;
 use App\classes\model\ServiceOptionCode;
 
 /**
- * author: ohiare nathaniel
- * This class controls the platform rendered
+ * @author ohiare nathaniel
+ *
+ * @desc This class controls the platform rendered
  * services, including adding a new service
  * adding a service option, adding a service
  * option code
