@@ -354,6 +354,7 @@ class PurchaseRouter
                 // NEXT USE ID PROVIDED TO GET VENDOR DATA ASSOCIATED WITH SERVICE
                 $vendorObject = new Vendor($this->db, $this->requestData);
                 $vendorData = $vendorObject->getVendor();
+                $this->requestData['vendorData'] = $vendorData;
                 if (!empty($vendorData)) {
                     // GET VENDOR CODE MAPPING
                     $vendorCodeMapping = $vendorData['vendor_code_mapping'] ? json_decode($vendorData['vendor_code_mapping']) : [];
