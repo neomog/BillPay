@@ -19,12 +19,30 @@ class Vendor {
 
     public function getVendors(): array
     {
-        $getVendorsQuery = "SELECT * FROM `vendor`";
+        $getVendorsQuery = "SELECT * FROM vendor";
         $getVendorsParams = [];
         $getVendorsResult = $this->db->fetchAll($getVendorsQuery, $getVendorsParams);
 
         if($getVendorsResult) {
             return $getVendorsResult;
+        }
+        return [];
+    }
+
+    /**
+     *
+     * @desc Get vendor details
+     *
+     * @return array
+     */
+    public function getVendor(): array
+    {
+        $identifier = $this->requestData['serviceVendorId'];
+        $query = "SELECT * FROM vendor WHERE id = ?";
+        $params[] = $identifier;
+        $result = $this->db->fetchRow($query, $params);
+        if ($result) {
+            return $result;
         }
         return [];
     }
