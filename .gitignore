@@ -1,6 +1,6 @@
 /vendor/
 /mysqldata/
-/.gitignore
+.gitignore
 .phpunit.result.cache
 ghy.php
 .env
