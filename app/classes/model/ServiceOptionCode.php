@@ -22,6 +22,18 @@ class ServiceOptionCode
         return [];
     }
 
+    public function getServiceOptionCode(): array
+    {
+        $identifier = $this->requestData['serviceOptionCode'];
+        $query = "SELECT * FROM service_option_code WHERE id = ?";
+        $params[] = $identifier;
+        $result = $this->db->fetchRow($query, $params);
+        if ($result) {
+            return $result;
+        }
+        return [];
+    }
+
     public function addServiceOptionCode(): bool
     {
         $serviceOptionId = $this->requestData['serviceOptionId'];
@@ -82,5 +94,22 @@ class ServiceOptionCode
             return true;
         }
         return false;
+    }
+
+    /**
+     *
+     * @desc Get platform service option code map from platform
+     *
+     * @return array
+     */
+    public function getServiceOptionCodeMap(): array
+    {
+        $platformObject = new Platform($this->db);
+        // TODO: Not sure if below indexing will work, test to confirm
+        $map = $platformObject->getPlatformSettings()['platform_service_option_code_map'];
+        if (!empty($map) && gettype($map) == 'string') {
+            return json_decode($map, true);
+        }
+        return [];
     }
 }
