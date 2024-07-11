@@ -10,10 +10,10 @@ define("ROOT", dirname(__DIR__));
 
 require ROOT . '/vendor/autoload.php';
 
-use App\classes\User;
-use App\classes\Helper;
-use App\classes\Utility;
 use App\classes\ErrorHandler;
+use App\classes\Helper;
+use App\classes\User;
+use App\classes\Utility;
 
 set_error_handler(array(ErrorHandler::class, 'handleError'));
 set_exception_handler(array(ErrorHandler::class, 'handleException'));
