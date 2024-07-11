@@ -10,10 +10,10 @@ define("ROOT", dirname(__DIR__));
 
 require ROOT . '/vendor/autoload.php';
 
-use App\classes\User;
-use App\classes\Helper;
-use App\classes\Utility;
 use App\classes\ErrorHandler;
+use App\classes\Helper;
+use App\classes\User;
+use App\classes\Utility;
 
 set_error_handler(array(ErrorHandler::class, 'handleError'));
 set_exception_handler(array(ErrorHandler::class, 'handleException'));
@@ -56,13 +56,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
             // SERVICES
-            'getServices' => 'ServiceRouter',
-            'getServiceOptions' => 'ServiceRouter',
-            'getVariationCodes' => 'ServiceRouter',
-            'airtime' => 'ServiceRouter',
-            'data' => 'ServiceRouter',
-            'education' => 'ServiceRouter',
-            'electricity' => 'ServiceRouter',
+            'getServices' => 'PurchaseRouter',
+            'getServiceOptions' => 'PurchaseRouter',
+            'getVariationCodes' => 'PurchaseRouter',
+            'airtime' => 'PurchaseRouter',
+            'data' => 'PurchaseRouter',
+            'education' => 'PurchaseRouter',
+            'electricity' => 'PurchaseRouter',
 
             //VENDOR
             'getVendors' => 'VendorRouter',

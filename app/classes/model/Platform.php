@@ -23,24 +23,15 @@ class Platform {
      *
      * @return array
      */
-    public function getPlatformSettings(): bool
+    public function getPlatformSettings(): array
     {
-        $identifier = $this->requestData['identifier'] ?? 0;
-        $params = [
-            $this->requestData['setting_name'],
-            $this->requestData['setting_description'],
-            $this->requestData['setting_status'],
-            $this->requestData['setting_editable']
-        ];
-
-        if ($identifier > 0) {
-            $query = "UPDATE platform_settings SET setting_name = ?, setting_description = ?, setting_status = ?, setting_editable = ? WHERE id = ?";
-            $params[] = $identifier;
-        } else {
-            $query = "INSERT INTO platform_settings (setting_name, setting_description, setting_status, setting_editable) VALUES (?, ?, ?, ?)";
+        $query = "SELECT * FROM platform_settings";
+        $params = [];
+        $result = $this->db->fetchAll($query, $params);
+        if ($result) {
+            return $result;
         }
-
-        return $this->db->executeQuery($query, $params);
+        return [];
     }
 
     /**
