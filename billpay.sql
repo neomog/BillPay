@@ -21,7 +21,7 @@ CREATE TABLE `user`(
                        `city` VARCHAR(100) DEFAULT NULL,
                        `currency` VARCHAR(3) DEFAULT NULL,
                        `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-                       `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                       `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- user_wallet table
@@ -109,7 +109,7 @@ CREATE TABLE `service_option`(
                                  `image` VARCHAR(50) NULL,
                                  `api` VARCHAR(50) NULL,
                                  `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-                                 `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                                 `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- services option codes table
@@ -125,7 +125,7 @@ CREATE TABLE `service_option_code`(
                                        `image` VARCHAR(50) NULL,
                                        `api` VARCHAR(50) NULL,
                                        `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-                                       `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                                       `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- vendors table
@@ -141,7 +141,7 @@ CREATE TABLE `vendor`(
                          `image` VARCHAR(50) NULL,
                          `vendor_code_mapping` TEXT NULL,
                          `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-                         `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                         `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- platform_setting table
@@ -153,7 +153,7 @@ CREATE TABLE `platform_setting`(
                                `setting_status` ENUM('true', 'false') NOT NULL,
                                `setting_editable` ENUM('true', 'false') NOT NULL,
                                `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-                               `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                               `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
 
 
