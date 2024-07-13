@@ -94,7 +94,7 @@ CREATE TABLE `service`(
                           `image` VARCHAR(50) NULL,
                           `api` VARCHAR(50) NULL,
                           `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-                          `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                          `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- services options table
