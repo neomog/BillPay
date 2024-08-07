@@ -24,10 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
 
 
-        $apiRequest = array();
         $text_data = file_get_contents("php://input");
         $text_data_array = json_decode($text_data, true);
-        $apiRequest = (array)$apiRequest + (array)$text_data_array;
+        $post_data = $_POST;
+        $apiRequest = (array)$text_data_array + $post_data;
 
         $Utility = new Utility();
         $dbConnection = $Utility->getConnection();
