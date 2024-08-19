@@ -9,7 +9,7 @@ $Utility = new Utility();
 
 $dbConnection = $Utility->getConnection();
 // SAMPLE DATA
-//$data = json_decode(
+// $data = json_decode(
 //   ' {
 //  "event": "charge.completed",
 //  "data": {
@@ -45,17 +45,17 @@ $dbConnection = $Utility->getConnection();
 //      "type": "VERVE",
 //      "expiry": "02/23"
 //    }
-//  }
-//}', true
-//);
-//header("Access-Control-Allow-Origin: *");
-//header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-//header("Access-Control-Allow-Headers: Content-Type");
-//header("Access-Control-Allow-Credentials: true");
-//
-//file_get_contents('php://input');
-//phpinfo();
-//$data = file_get_contents("php://input");
+// //  
+// }', true
+// );
+// header("Access-Control-Allow-Origin: *");
+// header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+// header("Access-Control-Allow-Headers: Content-Type");
+// header("Access-Control-Allow-Credentials: true");
+
+// file_get_contents('php://input');
+// phpinfo();
+// $data = file_get_contents("php://input");
 
 $dataRecieved = file_get_contents("php://input");
 
@@ -125,5 +125,5 @@ if(!empty($data)){
             }
         }
     }
-    http_response_code(200);
+//    http_response_code(200);
 }

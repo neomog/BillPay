@@ -31,6 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $Utility = new Utility();
         $dbConnection = $Utility->getConnection();
+       // var_export($dbConnection);
+       // die();
 
 // Define your API endpoints and their corresponding callbacks
         $endpoints = [
